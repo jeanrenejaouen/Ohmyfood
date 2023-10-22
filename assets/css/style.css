@@ -1,0 +1,29 @@
+/******** General ***********/
+#logo #titre {
+    font-family: 'Shrikhand', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) { 
+    
+}
+   
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+
+}
