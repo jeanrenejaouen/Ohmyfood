@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 /******** General ***********/
-#logo, h1, h2, h3 {
-    font-family: 'Shrikhand', serif;
+h1 {
+    font-family: 'Shrikhand', serif; 
+    width: 100%;
+    height: 44px; 
+    margin: 0; 
+    color: #101010;
+    padding-left: 16px;
+    padding-right: 19px;
+    font-size: 30px;    
+    font-weight: 400;
+    word-wrap: break-word
+}
+.logo {
+    width: 100%;
+    height: 36px;
+    padding: 14px 89px 13px 89px;
 }
 
 p {
@@ -18,69 +32,113 @@ p {
 /************MOBILE FIRST***********/
 body {
     width: 100%;
-    height: 2252px;    
+    height: 2252px;
+    margin: 0;    
 }
 
 footer {
     width: 100%;
     height: 186px;
-    padding: 30px 25px 30px 25px;
+    padding: 22px 25px 22px 25px;
     background-color: #353535;
     position: absolute;
     top: 2066px;
 }
-
-.text1 {
+header {
+    width: 100%;
+    height: 113px;
+}
+main {
+    width: 100%;
+    height: 1953px;
+}
+.hero {
+    width: 100%;
+    height: 287px;
+    background-color: #f6f6f6;
+}
+main h2 {
     font-size: 24px;
     font-weight: 700;
     color: black;
 }
-.text2 {
+main h3 {
     font-size: 18px;
     font-weight: 300;
     color: #353535;
 }
-.text3 {
+header h3 {
+    height: 19px;
     font-size: 16px;
     font-weight: 500;
     color: #353535;
+    margin: 0;
+    position: absolute;
+    top: 78px;
+    left: 147px;
+    right: 119px;
 }
-.text4 {
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
+.fa-location-dot {
+    position: absolute;
+    top: 79.5px;
+    left: 118px;
+    right: 245px;
 }
-.button {
+.btn-explore {
     width: 100%;
     height: 50px;   
     border-radius: 25px;
     color: white;
+    font-size: 18px;
+    font-weight: 300;
+    border-color: transparent;
+    cursor: pointer;
     background-color: var(--primary-color);        
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
 }
-.groupF {
-    display: flex;
-    flex-direction: row;
+a {
+    text-decoration: none;
 }
-.buttonF {
+.btn-choice, .btn-compose, .btn-taste {
     width: 100%;
     height: 72.4px; 
     background-color: #f6f6f6;
-    border-radius: 20px;   
+    border-radius: 20px;
+    border-color: transparent;
+    cursor: pointer; 
+}
+.btn-choice {      
     position: absolute;
     left: 32.51px;
     right: 20px;
     top: 105px;
     z-index: 1;
 }
+.btn-compose {      
+    position: absolute;
+    left: 32.51px;
+    right: 20px;
+    top: 202.3px;
+    z-index: 1;
+}
+.btn-taste {      
+    position: absolute;
+    left: 32.51px;
+    right: 20px;
+    top: 299.62px;
+    z-index: 1;
+}
 .location {
     width: 100%;
     height: 50px;
-    background-color: #EAEAEA;
+    background-color: #EAEAEA; 
+    display: flex;    
+    align-items: center; 
+    gap: 17px; 
 }
-.elipse {
+.elipse1 {
     width: 24px;
     height: 24px;
     background-color: var(--primary-color);
@@ -90,8 +148,39 @@ footer {
     align-items: center;
     position: absolute;
     left: 20px;
-    right: 313px;
+    right: 331px;
     top: 131.86px;
+    bottom: 284.14px;
+    z-index: 2;
+}
+.elipse2 {
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    right: 331px;
+    top: 229.17px;
+    bottom: 186.83px;
+    z-index: 2;
+}
+.elipse3 {
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    right: 331px;
+    top: 326.48px;
+    bottom: 89.52px;
     z-index: 2;
 }
 .number {
@@ -106,7 +195,39 @@ footer {
     position: absolute;
     top: 400px;
 }
-
+.resto {
+    width: 100%;
+    height: 2252px;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 800px;
+}
+.card {
+    width: 100%;
+    height: 251px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    position: relative; 
+    top: 102px; 
+    left: 17px;
+    right: 18px;  
+}
+.card img {
+    width: 93%;
+    height: 231px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    position: absolute;
+    left: -3px;
+    top: -57px;
+}
+.card h3 {
+    position: absolute;
+    top: 190px;
+    left: 13px;
+    right: 60px;
+    bottom: 41px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
