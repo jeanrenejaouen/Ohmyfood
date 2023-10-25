@@ -53,7 +53,7 @@ header {
 }
 main {
     width: 100%;
-    height: 1953px;
+    height: 2139px;
 }
 .hero {
     width: 100%;
@@ -255,7 +255,7 @@ a {
 }
 .resto {
     width: 100%;
-    height: 2252px;
+    height: 1460px;
     background-color: #f6f6f6;
     position: absolute;
     top: 800px;
@@ -342,6 +342,10 @@ footer h3 {
     font-size: 18px;
     font-weight: 400;
 }
+footer li {
+    color: white;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
