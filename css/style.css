@@ -41,11 +41,14 @@ body {
 
 footer {
     width: 100%;
-    height: 186px;
+    height: 142px;
     padding: 22px 25px 22px 25px;
     background-color: #353535;
     position: absolute;
     top: 2259px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 header {
     width: 100%;
@@ -151,7 +154,7 @@ a {
     top: 105px;
     z-index: 1;
 }
-.btn-choice h3 {
+.btn-choice h3, .btn-compose h3, .btn-taste h3 {
     width: 100%;
     height: 19px;
     color: black;
@@ -164,10 +167,33 @@ a {
     right: 38px;
     bottom: 28.12px;
 }
-.fa-mobile-screen-button {
+.fa-mobile-screen-button { 
     width: 13.02px;
-    height: 19.9px;    
+    height: 19.9px;   
+    font-size: 19.9px;    
     color: #7e7e7e;      
+    position: absolute;
+    left: 33.47px;
+    top: 24.54px;
+    right: 276px;
+    bottom: 27.93px;
+}
+.fa-list-ul {
+    width: 13.02px;
+    height: 19.9px;   
+    font-size: 19.9px;    
+    color: #7e7e7e;      
+    position: absolute;
+    left: 33.47px;
+    top: 24.54px;
+    right: 276px;
+    bottom: 27.93px;
+}
+.fa-store {
+    width: 18px;
+    height: 17.91px;   
+    font-size: 18px;    
+    color: #9356DC;      
     position: absolute;
     left: 33.47px;
     top: 24.54px;
@@ -335,6 +361,7 @@ a {
     flex-direction: column;
     gap: 75px;
 }
+
 footer h3 {
     font-family: 'Shrikhand', sans-serif;
     color: white;
@@ -343,7 +370,31 @@ footer h3 {
     font-weight: 400;
 }
 footer li {
+    color: white;    
+    font-family: Roboto;
+    font-weight: 500;
+    word-wrap: break-word
+}
+footer ul {
+    width: 100%;
+    height: 99px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+footer a {
     color: white;
+}
+.fa-utensils {
+    font-size: 13px;
+    margin-right: 11px;
+}
+.fa-handshake-angle {
+    font-size: 13px;
+    margin-right: 10.08px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
