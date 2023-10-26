@@ -396,6 +396,50 @@ footer a {
     font-size: 13px;
     margin-right: 10.08px;
 }
+.banner img {
+    width: 100%;
+    height: 275px;
+}
+.banner {
+    width: 100%;
+    position: absolute;
+    top: 62px;
+}
+.menu {
+    width: 100%;
+    height: 1307px;
+    position: absolute;
+    top: 283px;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0 0;
+}
+.fa-arrow-left {
+    color: #353535;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    position: absolute;
+    top: 17px;
+    left: 17px;    
+}
+.food .btn-choice, .food .btn-compose, .food .btn-taste {
+    width: 100%;
+    height: 69px;
+    background-color: white;
+    border-radius: 15px;
+}
+.titre-page .fa-heart {
+    position: absolute;
+    top: 40px;
+    left: 312px;
+    font-size: 22px;
+} 
+.titre-page h2 {    
+    color: #101010;
+    font-size: 28px;
+    font-family: Shrikhand;
+    font-weight: 400; 
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
