@@ -35,7 +35,7 @@ p {
 /************MOBILE FIRST***********/
 body {
     width: 100%;
-    height: 2252px;
+    height: 100%;
     margin: 0;    
 }
 
@@ -56,7 +56,7 @@ header {
 }
 main {
     width: 100%;
-    height: 2139px;
+    height: 100%;  
 }
 .hero {
     width: 100%;
@@ -332,6 +332,8 @@ a {
 .fa-heart {
     width: 22px;
     height: 21px;
+    font-size: 22px;
+    color: #101010;
     position: absolute;
     top: 197px;
     left: 293px;
@@ -393,6 +395,8 @@ footer a {
     margin-right: 11px;
 }
 .fa-handshake-angle {
+    width: 11.92px;
+    height: 13px;
     font-size: 13px;
     margin-right: 10.08px;
 }
@@ -412,33 +416,162 @@ footer a {
     top: 283px;
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
+    display: flex;
+    gap: 40px;
 }
 .fa-arrow-left {
     color: #353535;
     width: 30px;
     height: 30px;
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
-    top: 17px;
-    left: 17px;    
+    top: 22px;
+    left: 17px;     
+    text-align: center;    
 }
-.food .btn-choice, .food .btn-compose, .food .btn-taste {
+.btn-food {
     width: 100%;
-    height: 69px;
+    height: 72px;
+    padding: 15px;
     background-color: white;
     border-radius: 15px;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.titre-page {
+    width: 100%;
+    height: 27px;
+    position: absolute;
+    top: 32px;
+    left: 17px;
 }
 .titre-page .fa-heart {
     position: absolute;
-    top: 40px;
-    left: 312px;
+    top: 8px;
+    left: 295px;
     font-size: 22px;
 } 
-.titre-page h2 {    
+.titre-page h2 { 
+    width: 100%;
+    height: 41px;   
     color: #101010;
     font-size: 28px;
     font-family: Shrikhand;
     font-weight: 400; 
+    margin: 0;
+}
+.starter {
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    top: 101px;
+    left: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.starter h2, .plat h2, .dessert h2 {
+    margin: 0;    
+    color: black;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
+.buttonStarter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.flat {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+}
+#name-flat {
+    width: 100%;
+    height: 21px;    
+    color: black;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: 550;
+    text-align: start;
+    top: 0;
+    left: 0;
+    right: 0;    
+}
+.flat h4 {
+    width: 100%;
+    height: 19px;     
+    color: black;
+    font-size: 15.04px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    text-align: start;
+    position: absolute;
+    bottom: 0;
+}
+.price {
+    width: 100%;
+    height: 18px;    
+    color: #353535;
+    font-size: 15.04px;
+    font-family: Roboto;
+    font-weight: 700;    
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 307px;
+    top: 37.5px;
+    gap: 5px;
+}
+.plat {
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    top: 411px;
+    left: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.dessert {
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    top: 721px;
+    left: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.btn-cmd {
+    width: 65%;
+    height: 50px;   
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: var(--primary-color);        
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    top: 1031px;
+    left: 94.5px;    
+}
+#menu1 {
+    top: 1420px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
