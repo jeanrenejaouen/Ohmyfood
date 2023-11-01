@@ -262,7 +262,7 @@ a {
 }
 .functioning {
     width: 100%;
-    height: 440px; 
+    height: 390px; 
     display: flex;
     flex-direction: column;    
     padding-top: 48px; 
@@ -271,67 +271,111 @@ a {
     gap: 26px;
 }
 .resto {
-    width: 100%;
-    height: 1460px;
+    width: 95%;
+    
+    padding-left: 17px;
+    padding-right: 18px;
     background-color: #f6f6f6;    
     display: flex;
+    flex-direction: column;    
+}
+.card-group {
+    display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 18px;
+    margin-bottom: 66px;
 }
 .card {
     width: 100%;
     height: 251px;
     border-radius: 15px;
     background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.10);
     display: flex;
-    flex-direction: column;     
+    flex-direction: column; 
+    position: relative;          
+}
+.divImg {
+    width: 100%;
+    height: 231px;
+    
 }
 .card img {
     width: 100%;
-    height: 231px;
+    height: 174px;
     border-radius: 15px 15px 0 0;
-    object-fit: cover;    
+    object-fit: cover;     
+}
+.card-info {
+    width: 100%;
+    height: 77px;
+    color: black;
+    padding-left: 13px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+
 }
 .card h3 {
     height: 21px;
     font-weight: 700;    
-    text-align: start;
+    text-align: start;    
+    padding-bottom: 5px;
 }
 .card p {    
-    color: black;
     font-size: 17px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 300;    
     margin: 0;
+    padding-bottom: 12px;
 }
 .fa-heart {
     width: 22px;
     height: 21px;
     font-size: 22px;
-    color: #101010;    
+    color: #101010;          
 }
 .resto h2 {
     width: 100%;
     height: 68px;
-    margin: 0;    
+    margin-top: 54px;  
+    margin-bottom: -20px;  
+}
+.newGreen {
+    width: 93%;
+    height: 29px;    
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 13px; 
+    right: 12px;
+    
 }
 #new {  
     width: 61.37px;
     height: 16px; 
     font-size: 14px;
     font-weight: 500;
-    color: #008766;
-    background-color: #99E2D0;    
-    padding: 7px 9.63px 6px 9px;
-    border-radius: 2px;  
-    position: absolute;
-    right: 15px;
-    top: 975px;  
+    background-color: #99E2D0;
+    color: #008766;  
+    border-radius: 2px;      
+    padding: 7px 9.63px 6px 9px;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .resto-card {
+    width: 100%;    
     display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 18px;
+}
+.heart {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 33px;
+    right: 25px;
 }
 
 footer h3 {
