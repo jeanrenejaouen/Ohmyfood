@@ -22,7 +22,17 @@ h2, h3 {
     padding-bottom: 13px;
     display: flex;
     align-items: center; 
-    justify-content: center;   
+    justify-content: center;  
+    gap: 42px; 
+}
+.arrow {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 17px;
+    left: 17px;
 }
 
 p {
@@ -52,8 +62,7 @@ footer {
     gap: 16px;
 }
 header {
-    width: 100%;
-    height: 113px;
+    width: 99%;   
     display: flex;
     flex-direction: column;          
 }
@@ -64,10 +73,10 @@ header {
     box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 main {
-    width: 100%;
-    height: 100%;  
+    width: 100%;    
 }
 .book {
     width: 100%;    
@@ -148,8 +157,7 @@ a {
     cursor: pointer; 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: start;
+    align-items: center;   
 }
 .btn-group {    
     width: 100%;
@@ -338,6 +346,11 @@ a {
     font-size: 22px;
     color: #101010;          
 }
+.menu .fa-heart {
+    position: absolute;
+    top: 40px;
+    right: 41px;
+}
 .resto h2 {
     width: 100%;
     height: 68px;
@@ -419,26 +432,27 @@ footer a {
     margin-right: 10.08px;
 }
 .banner img {
-    width: 100%;
+    width: 99%;
     height: 275px;
 }
 .banner {
-    width: 100%;
-    position: absolute;
-    top: 62px;
+    width: 100%; 
+    margin-top: -3px;  
 }
 .menu {
-    width: 100%;
-    height: 1307px;    
+    width: 95%;        
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
+    padding: 32px 13px 40px 13px;
     display: flex;
+    flex-direction: column;
     gap: 40px;
+    position: relative;
+    margin-top: -55px;
 }
 .fa-arrow-left {
     color: #353535;
-    width: 30px;
-    height: 30px;
+    width: 30px;    
     font-size: 20px;        
     text-align: center;    
 }
@@ -449,19 +463,17 @@ footer a {
     background-color: white;
     border-radius: 15px;
     border: 0;
-    display: flex;
-    flex-direction: row;
+    cursor: pointer;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px rgba(0, 0, 0, 0.10);    
     position: relative;
 }
 .titre-page {
     width: 100%;
-    height: 27px;    
+    padding-left: 4px;
+    padding-right: 4px;        
 }
-.titre-page .fa-heart {    
-    font-size: 22px;
-} 
 .titre-page h2 { 
-    width: 100%;
+    width: 80%;
     height: 41px;   
     color: #101010;
     font-size: 28px;
@@ -469,9 +481,18 @@ footer a {
     font-weight: 400; 
     margin: 0;
 }
+.titreStarter {
+    width: 275px;
+    height: 27px;
+}
+.borderGreen {   
+    width: 40px;
+    height: 0px;     
+    border-bottom: 3px #99E2D0 solid; 
+    margin-top: -12px;   
+}
 .starter {
-    width: 100%;
-    height: 270px;    
+    width: 99%;       
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -496,8 +517,7 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    position: relative;
+    gap: 5px;    
 }
 #name-flat {
     width: 100%;
@@ -521,8 +541,7 @@ footer a {
     margin: 0;
     text-align: start;    
 }
-.price {
-    width: 100%;
+.price {    
     height: 18px;    
     color: #353535;
     font-size: 15.04px;
@@ -531,23 +550,17 @@ footer a {
     display: flex;
     align-items: center;   
     gap: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
-.plat {
-    width: 100%;
-    height: 270px;    
+.cmd {
+    width: 99%;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-.dessert {
-    width: 100%;
-    height: 270px;    
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: center;
 }
 .btn-cmd {
-    width: 65%;
+    width: 53.6%;
     height: 50px;   
     border-radius: 25px;
     color: white;
@@ -555,7 +568,8 @@ footer a {
     font-weight: 300;
     border-color: transparent;
     cursor: pointer;
-    background-color: var(--primary-color);        
+    background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);       
     display: flex;
     align-items: center;
     justify-content: center;        
