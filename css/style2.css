@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-/******** General ***********/
+/******************************************************************************************************/
+/************************************** GENERAL *******************************************************/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;    
+}
+
+main {
+    width: 100%;    
+}
+main h3 {
+    width: 100%;
+    height: 46px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #353535;
+    text-align: center;      
+}
+
 h1 {
     font-family: 'Shrikhand', sans-serif; 
     width: 100%;
@@ -16,27 +37,13 @@ h1 {
 h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
-.logo {    
-    height: 44px;    
-    padding-top: 14px;
-    padding-bottom: 13px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;  
-    gap: 42px; 
-}
-.arrow {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 17px;
-    left: 17px;
-}
 
 p {
     font-family: 'Roboto', serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 :root {
@@ -44,27 +51,22 @@ p {
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0;
 }
+/**********************************************************************************************************/
+/******************************************MOBILE FIRST****************************************************/
 
-/************MOBILE FIRST***********/
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;    
-}
-
-footer {
-    width: 100%;
-    height: 142px;
-    padding: 22px 25px 22px 25px;
-    background-color: #353535;    
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+/********************** HEADER ********************************/
 header {
     width: 99%;   
     display: flex;
     flex-direction: column;          
+}
+header h3 {
+    width: 100%;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    margin: 0;    
 }
 .log {
     width: 100%;
@@ -75,9 +77,33 @@ header {
     justify-content: center;
     align-items: center;
 }
-main {
-    width: 100%;    
+.logo {    
+    height: 44px;    
+    padding-top: 14px;
+    padding-bottom: 13px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+    gap: 42px; 
 }
+.loc {
+    width: 100%;
+    height: 50px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+}
+.location {    
+    height: 50px;       
+    display: flex;    
+    align-items: center; 
+    justify-content: center;  
+    gap: 17px; 
+}
+
+
+/********************** SECTION BOOK ********************************/
+
 .book {
     width: 100%;    
     background-color: #f6f6f6;
@@ -96,30 +122,12 @@ main {
     text-align: center;
     margin: 0;          
 }
-.functioning h2 {
+.taste {
     width: 100%;
-    height: 31px;
-    margin: 0;   
-}
-main h3 {
-    width: 100%;
-    height: 46px;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 300;
-    color: #353535;
-    text-align: center;      
-}
-header h3 {
-    width: 100%;
-    height: 19px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #353535;
-    margin: 0;    
-}
-.fa-location-dot {
-   
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 57px;
 }
 .btn-explore {
     width: 65%;
@@ -134,17 +142,45 @@ header h3 {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.25);        
     display: flex;
     align-items: center;
-    justify-content: center;      
+    justify-content: center;  
+    position: relative;
+    z-index: 1;  
 }
-a {
-    text-decoration: none;
-}
-.taste {
+.btn-explore:hover::after {
+    opacity: 1;
+  }
+  .btn-explore::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    border-color: transparent; 
+    background: linear-gradient(231deg, #9356DC 0%, #FF79DA 100%);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.35); 
+    border-radius: 25px;  
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+
+/********************** SECTION FONCTIONNEMENT ********************************/
+
+.functioning {
     width: 100%;
+    height: 390px; 
     display: flex;
-    justify-content: center;
-    padding-top: 27px;
-    padding-bottom: 57px;
+    flex-direction: column;    
+    padding-top: 48px; 
+    padding-left: 20px;
+    padding-right: 20px; 
+    gap: 26px;
+}
+.functioning h2 {
+    width: 100%;
+    height: 31px;
+    margin: 0;   
 }
 .btn-choice, .btn-compose, .btn-taste {
     width: 90%;
@@ -154,22 +190,34 @@ a {
     box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
     border-radius: 20px;
     border-color: transparent;
-    cursor: pointer; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;   
+    cursor: pointer;      
 }
 .btn-group {    
     width: 100%;
     height: 19px;
     color: black;
     font-size: 16px;    
-    font-weight: 500;    
-}    
+    font-weight: 500;
+    margin-left: -20px;    
+}  
+
 .btn-choice { 
     padding-left: 33.47px; 
     position: relative;  
     z-index: 1;
+}
+.btn-compose {      
+    margin-top: 24.92px;
+    margin-bottom: 24.94px;
+    position: relative;
+    z-index: 1;
+    padding-left: 34.49px;
+}
+.btn-taste {      
+    margin-bottom: 68px;
+    position: relative;
+    z-index: 1;
+    padding-left: 35.49px;
 }
 .btn-choice h3, .btn-compose h3, .btn-taste h3 {
     width: 100%;
@@ -200,33 +248,7 @@ a {
     color: #9356DC; 
     padding-right: 20px;    
 }
-.btn-compose {      
-    margin-top: 24.92px;
-    margin-bottom: 24.94px;
-    position: relative;
-    z-index: 1;
-    padding-left: 34.49px;
-}
-.btn-taste {      
-    margin-bottom: 68px;
-    position: relative;
-    z-index: 1;
-    padding-left: 35.49px;
-}
-.loc {
-    width: 100%;
-    height: 50px;
-    background-color: #EAEAEA;
-    display: flex;
-    justify-content: center;
-}
-.location {    
-    height: 50px;       
-    display: flex;    
-    align-items: center; 
-    justify-content: center;  
-    gap: 17px; 
-}
+
 .elipse1 {
     width: 24px;
     height: 24px;
@@ -272,24 +294,42 @@ a {
     color: white;
     display: flex;      
 }
-.functioning {
-    width: 100%;
-    height: 390px; 
-    display: flex;
-    flex-direction: column;    
-    padding-top: 48px; 
-    padding-left: 20px;
-    padding-right: 20px; 
-    gap: 26px;
-}
+
+/************************ SECTION RESTAURANTS ********************************/
 .resto {
-    width: 95%;
-    
+    width: 95%;    
     padding-left: 17px;
     padding-right: 18px;
     background-color: #f6f6f6;    
     display: flex;
     flex-direction: column;    
+}
+#new {  
+    width: 61.37px;
+    height: 16px; 
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #99E2D0;
+    color: #008766;  
+    border-radius: 2px;      
+    padding: 7px 9.63px 6px 9px;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resto-card {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.heart {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 33px;
+    right: 25px;
 }
 .card-group {
     display: flex;
@@ -325,7 +365,6 @@ a {
     padding-left: 13px;
     padding-top: 16px;
     padding-bottom: 12px;
-
 }
 .card h3 {
     height: 21px;
@@ -340,12 +379,22 @@ a {
     margin: 0;
     padding-bottom: 12px;
 }
+.newGreen {
+    width: 93%;
+    height: 29px;    
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 13px; 
+    right: 12px;    
+}
 .fa-heart {
     width: 22px;
     height: 21px;
     font-size: 22px;
-    color: #101010;          
+    color: #101010;
 }
+
 .menu .fa-heart {
     position: absolute;
     top: 40px;
@@ -357,44 +406,17 @@ a {
     margin-top: 54px;  
     margin-bottom: -20px;  
 }
-.newGreen {
-    width: 93%;
-    height: 29px;    
-    display: flex;
-    justify-content: end;
-    position: absolute;
-    top: 13px; 
-    right: 12px;
-    
-}
-#new {  
-    width: 61.37px;
-    height: 16px; 
-    font-size: 14px;
-    font-weight: 500;
-    background-color: #99E2D0;
-    color: #008766;  
-    border-radius: 2px;      
-    padding: 7px 9.63px 6px 9px;         
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.resto-card {
-    width: 100%;    
+
+/********************** FOOTER ********************************/
+footer {
+    width: 100%;
+    height: 142px;
+    padding: 22px 25px 22px 25px;
+    background-color: #353535;    
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
 }
-.heart {
-    width: 90%;
-    display: flex;
-    justify-content: end;
-    position: absolute;
-    bottom: 33px;
-    right: 25px;
-}
-
 footer h3 {
     font-family: 'Shrikhand', sans-serif;
     color: white;
@@ -431,6 +453,17 @@ footer a {
     font-size: 13px;
     margin-right: 10.08px;
 }
+/********************************************************************************************/
+/****************************** STYLE PAGE DE RESTAURANT ************************************/
+.arrow {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+}
 .banner img {
     width: 99%;
     height: 275px;
@@ -466,6 +499,8 @@ footer a {
     cursor: pointer;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px rgba(0, 0, 0, 0.10);    
     position: relative;
+    display: flex;
+    flex-direction: row;
 }
 .titre-page {
     width: 100%;
@@ -572,7 +607,34 @@ footer a {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);       
     display: flex;
     align-items: center;
-    justify-content: center;        
+    justify-content: center; 
+    position: relative;
+    z-index: 1;       
+}
+.btn-cmd:hover::after {
+    opacity: 1;
+  }
+  .btn-cmd::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    border-color: transparent; 
+    background: linear-gradient(231deg, #9356DC 0%, #FF79DA 100%);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.35); 
+    border-radius: 25px;  
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+  /*****************COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
+  .check-mark {
+    width: 59px;
+    height: 72px;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;      
 }
 
 
