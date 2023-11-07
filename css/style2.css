@@ -39,7 +39,7 @@ h2, h3 {
 }
 
 p {
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -143,11 +143,12 @@ header h3 {
     display: flex;
     align-items: center;
     justify-content: center;  
-    position: relative;
-    z-index: 1;  
+    position: relative;    
+    z-index: 1;   
 }
 .btn-explore:hover::after {
     opacity: 1;
+    
   }
   .btn-explore::after {
     content: "";
@@ -158,11 +159,11 @@ header h3 {
     left: 0; 
     border-color: transparent; 
     background: linear-gradient(231deg, #9356DC 0%, #FF79DA 100%);
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.35); 
+    transition: opacity 250ms, box-shadow 400ms ease-in-out;
     border-radius: 25px;  
     opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
+    z-index: -1;    
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.35); 
   }
 
 /********************** SECTION FONCTIONNEMENT ********************************/
@@ -198,7 +199,9 @@ header h3 {
     color: black;
     font-size: 16px;    
     font-weight: 500;
-    margin-left: -20px;    
+    position: absolute;
+    left: -15px;
+    top: 21px;    
 }  
 
 .btn-choice { 
@@ -467,6 +470,7 @@ footer a {
 .banner img {
     width: 99%;
     height: 275px;
+    object-fit: cover;
 }
 .banner {
     width: 100%; 
@@ -500,7 +504,7 @@ footer a {
     box-shadow: 0px 4.011494159698486px 15.043103218078613px rgba(0, 0, 0, 0.10);    
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
 }
 .titre-page {
     width: 100%;
@@ -552,9 +556,20 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;    
+    gap: 5px;       
 }
-#name-flat {
+
+/**** Permet de rogner le texte qd il est trop long quand la coche apparaît, suivi de 3 petits points ****/
+.flat p {
+    max-width: 350px;
+    white-space: nowrap;   /*Empêche le retour à la ligne du texte*/ 
+    overflow: hidden;   /*Permet de cacher le contenu qui dépasse de son conteneur*/
+    text-overflow: ellipsis;   /*Ajoute les 3 petits points*/
+    margin: 0;
+    text-align: start;
+}
+
+.flat__titlePlat {
     width: 100%;
     height: 21px;    
     color: black;
@@ -566,7 +581,8 @@ footer a {
     left: 0;
     right: 0;    
 }
-.flat h4 {
+
+.flat__contentPlat {
     width: 100%;
     height: 19px;     
     color: black;
@@ -577,18 +593,20 @@ footer a {
     text-align: start;    
 }
 .price {    
-    height: 18px;    
+    height: 42px;    
     color: #353535;
     font-size: 15.04px;
     font-family: Roboto;
     font-weight: 700;    
     display: flex;
-    align-items: center;   
+    align-items: end;   
     gap: 5px;
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
+    }
+  
+.price p {
+    margin: 0;
 }
+
 .cmd {
     width: 99%;
     display: flex;
@@ -631,10 +649,14 @@ footer a {
   }
   /*****************COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
   .check-mark {
-    width: 59px;
+    min-width: 59px;
     height: 72px;
     background-color: #99E2D0;
-    border-radius: 0 15px 15px 0;      
+    border-radius: 0 15px 15px 0;
+    margin-top: -15px;
+    margin-right: -15px;
+    margin-left: 15px;
+    display: none;      
 }
 
 
