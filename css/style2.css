@@ -243,14 +243,16 @@ header h3 {
     height: 15.92px;   
     font-size: 19.9px;    
     color: #7e7e7e;
-    padding-right: 23px;   
+    padding-right: 23px;
+    margin-left: -15px;   
 }
 .fa-store {
     width: 18px;
     height: 17.91px;   
     font-size: 18px;    
     color: #9356DC; 
-    padding-right: 20px;    
+    padding-right: 20px; 
+    margin-left: -10px;   
 }
 
 .elipse1 {
