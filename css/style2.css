@@ -23,7 +23,7 @@
 .loader img {
     position: absolute;
     left: -20px;
-    animation: moveServer 5s infinite linear;
+    animation: moveServer 5s /* infinite */ linear both;
 }
 
 @keyframes moveServer {
@@ -34,10 +34,10 @@
         transform: translateX(50%);
     }
     90% {
-        transform: translateX(163%);
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(163%);
     }
 }
 
