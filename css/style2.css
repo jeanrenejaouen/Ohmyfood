@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
+
+/****************************************LOADER********************************************************/
+.loader {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: end;
+   justify-content: center;
+}
+
+.loader__bar {
+    width: 90%;
+    height: 15px;
+    background-color: #99E2D0;
+    display: flex;
+    align-items: end;
+    margin-left: 35px;
+}
+
+.loader img {
+    position: absolute;
+    left: -20px;
+    animation: moveServer 5s infinite linear;
+}
+
+@keyframes moveServer {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    90% {
+        transform: translateX(163%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /******************************************************************************************************/
 /************************************** GENERAL *******************************************************/
 
@@ -191,8 +232,7 @@ header h3 {
     background-color: #f6f6f6;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
     border-radius: 20px;
-    border-color: transparent;
-    cursor: pointer;      
+    border-color: transparent;         
 }
 .btn-group {    
     width: 100%;
@@ -354,7 +394,7 @@ header h3 {
     opacity: 0;
     transform: scaleX(0);
     transition: opacity 250ms;  
-    transition: transform 1000ms ease-in-out; 
+    transition: transform 700ms ease-in-out; 
 }
 .heart__noBg {
     color: #101010;     
@@ -507,7 +547,7 @@ footer a {
     width: 95%;        
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
-    padding: 32px 13px 40px 13px;
+    padding: 32px 13px 0px 13px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -520,22 +560,7 @@ footer a {
     font-size: 20px;        
     text-align: center;    
 }
-.btn-food {
-    width: 100%;
-    height: 42px;    
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    background-color: white;
-    border-radius: 15px;
-    border: 0;
-    cursor: pointer;
-    box-shadow: 0px 4.011494159698486px 15.043103218078613px rgba(0, 0, 0, 0.10);    
-    position: relative;
-    display: flex;
-    flex-direction: row;   
-}
+
 .titre-page {
     width: 100%;
     padding-left: 4px;
@@ -565,6 +590,7 @@ footer a {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 40px;
 }
 .starter h2, .plat h2, .dessert h2 {
     margin: 0;    
@@ -580,70 +606,13 @@ footer a {
     flex-direction: column;
     gap: 12px;
 }
-.flat {
-    width: 100%;
-    height: 42px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;       
-}
 
-/**** Permet de rogner le texte qd il est trop long quand la coche apparaît, suivi de 3 petits points ****/
-.flat p {
-    max-width: 350px;
-    white-space: nowrap;   /*Empêche le retour à la ligne du texte*/ 
-    overflow: hidden;   /*Permet de cacher le contenu qui dépasse de son conteneur*/
-    text-overflow: ellipsis;   /*Ajoute les 3 petits points*/
-    margin: 0;
-    text-align: start;
-}
-
-.flat__titlePlat {
-    width: 100%;
-    height: 21px;    
-    color: black;
-    font-size: 18px;
-    font-family: Roboto, sans-serif;
-    font-weight: 550;
-    text-align: start;
-    top: 0;
-    left: 0;
-    right: 0;    
-}
-
-.flat__contentPlat {
-    width: 100%;
-    height: 19px;     
-    color: black;
-    font-size: 15.04px;
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
-    margin: 0;
-    text-align: start;    
-}
-.price {    
-    height: 42px;    
-    color: #353535;
-    font-size: 15.04px;
-    font-family: Roboto;
-    font-weight: 700;    
-    display: flex;
-    align-items: end;   
-    gap: 5px;
-    position: absolute;
-    right: 15px;
-    transition: transform 300ms ease-in-out; 
-    }
-  
-.price p {
-    margin: 0;
-}
 
 .cmd {
     width: 99%;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 .btn-cmd {
     width: 53.6%;
@@ -681,123 +650,197 @@ footer a {
     transition: opacity 250ms;
   }
   /*****************COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
-  .btn {
-    width: 100%;
-    height: 72px;
+  
+  .btn-food {
+    width: 90%;
+    height: 42px;    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px rgba(0, 0, 0, 0.10);    
+    position: relative;
     display: flex;
     flex-direction: row;
-  }
-  .check {
-    width: 59px;
-    height: 70px;    
-    border-radius: 0 15px 15px 0;   
-    transition: transform 300ms ease-in-out;
-    position: absolute;
-    right: -43px;    
-  }
-  .check__mark {    
-    width: 59px;
-    height: 72px;
-    background-color: #99E2D0;
-    border-radius: 0 15px 15px 0; 
-    position: relative;
-    transform: scaleX(0);
-    transform-origin: 100% 50%;  
-    transition: transform 500ms 150ms ease-in-out;      
-    }
-    .btn-food:active + .check > .check__mark { 
-       
-    transform: scaleX(1);   
-    }
-    .btn-food:active + .check {
-        transform: translate(-99%);      
-    }
-    .btn-food:active > .price {
-        transform: translate(-59px)
-    }
-    .btn-food:active > .flat {
-        width: 230px;       
-    }
-            
-    .fa-circle-check {  /* LOGO VALIDE DE LA COCHE VERTE */
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 20px;
-        top: 26px;
-        background-color: white;
-        color: #99E2D0;
-        font-size: 20px;
-        border-radius: 20px;
-    }
+    overflow: hidden;   
+}
 
+.flat {
+    width: calc(100% - 50px);
+    height: 42px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    /* white-space: nowrap;   
+    overflow: hidden;  
+    text-overflow: ellipsis;  */ 
+    /* flex-wrap: wrap; */
+    transition: 1s;     
+}
+
+.flat p {
+    max-width: 100%;
+    white-space: nowrap;   /*Empêche le retour à la ligne du texte*/ 
+    overflow: hidden;   /*Permet de cacher le contenu qui dépasse de son conteneur*/
+    text-overflow: ellipsis;   /*Ajoute les 3 petits points*/
+    margin: 0;
+    text-align: start;
+}
+
+.flat__titlePlat {
+    width: 100%;
+    height: 21px;    
+    color: black;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: 550;
+    text-align: start;
+    top: 0;
+    left: 0;
+    right: 0;    
+}
+
+.flat__contentPlat {
+    width: 100%;
+    height: 19px;     
+    color: black;
+    font-size: 15.04px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    text-align: start;    
+}
+.price {  
+    width: 50px;  
+    height: 42px;    
+    color: #353535;
+    font-size: 15.04px;
+    font-family: Roboto;
+    font-weight: 700;    
+    display: flex;
+    align-items: end;   
+    gap: 5px;
+    position: absolute;
+    right: 15px;
+    transition: 1s;
+    /* transition: transform 300ms ease-in-out;  */
+    }
+  
+.price p {
+    margin: 0;
+}
+
+  
+  .check {
+   /*  width: 59px; */
+    width: 0;
+    height: 72px;    
+    border-radius: 0 15px 15px 0;  
+    display: flex;
+    color: white;
+    background-color: #99e2d0; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 1s;
+    /* transition: transform 300ms ease-in-out;*/       
+  }
+
+  .btn-food .check >i {
+    width: 20px;
+    height: 20px;    
+    background-color: white;
+    color: #99E2D0;
+    font-size: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 1s;
+    transform: rotate(90deg);
+  }
+
+  .btn-food:active .flat {
+    width: calc(100% - 59px - 40px);
+  }
+
+  .btn-food:active .price {
+    width: 94px;
+  }
+
+  .btn-food:active .check {
+    width: 59px;
+  }
+
+  .btn-food:active .check .fa-circle-check {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+         
+   
 /*******************APPARITION DES PLATS UN PAR UN*************************/
 /*******************AU CHARGEMENT DE LA PAGE*******************************/
     .flat1{
         transform-origin: left;  /*Place l’origine à gauche*/
         transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
-        animation: flat-display 500ms 100ms both;
+        /* transition : transform 500ms 150ms ease-in-out ; */
+        animation: flat-display 400ms 100ms both;
     }
     .flat2{
         transform-origin: left;  /*Place l’origine à gauche*/
         transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
         animation: flat-display 500ms 600ms both;
     }
     .flat3{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;        
         animation: flat-display 500ms 1200ms both;
     }
     .flat4{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;        
         animation: flat-display 500ms 1800ms both;
     }
     .flat5{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;        
         animation: flat-display 500ms 2400ms both;
     }
     .flat6{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;        
         animation: flat-display 500ms 3000ms both;
     }
     .flat7{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;        
         animation: flat-display 500ms 3600ms both;
     }
     .flat8{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;        
         animation: flat-display 500ms 4200ms both;
     }
     .flat9{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;       
         animation: flat-display 500ms 4800ms both;
     }
     .flat10{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0.5) ;	
-        transition : transform 500ms 150ms ease-in-out ;
+        transform : scaleX(0.5) ;        
         animation: flat-display 500ms 5400ms both;
     }
 
     @keyframes flat-display{
         0% {
             transform: scaleX(0);
-            opacity: .1;
+            opacity: .5;
         }
         17% {
             transform: scaleX(.18);
@@ -816,6 +859,7 @@ footer a {
         }
     }
 
+   
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
