@@ -2,13 +2,43 @@
 
 
 /****************************************LOADER********************************************************/
+.header-index, .main-index, .footer-index {
+    opacity: 0;    
+    animation: homepage 4s both;
+    
+}
+.header-index {
+    position: absolute;
+    top: 0;
+}
+.main-index {
+    position: absolute;
+    top: 115px;
+}
+.footer-index {
+    position: absolute;
+    top: 2140px;
+}
+
+.titleLoad {
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    animation: homepage 1.2s both;
+}
+
 .loader {
     width: 100%;
-    height: 200px;
+    height: 2500px;
+    background-color: black;
     position: relative;
-    display: flex;
+    display: flex;    
     align-items: end;
-   justify-content: center;
+    justify-content: center;    
+    animation: load 4s both;  
+    opacity: 1; 
+    /* z-index: 1; */   
 }
 
 .loader__bar {
@@ -18,28 +48,105 @@
     display: flex;
     align-items: end;
     margin-left: 35px;
+    position: absolute;
+    top: 400px;
+    left: -30px;
+    padding-left: 50px;
+   
 }
 
-.loader img {
-    position: absolute;
-    left: -20px;
-    animation: moveServer 5s /* infinite */ linear both;
+.loader img {  
+    width: 60%;  
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: absolute;    
+    left: -35px;    
+    animation: moveServer 4s linear both;
+       
 }
 
 @keyframes moveServer {
     0% {
         transform: translateX(0);
+        animation-timing-function: cubic-bezier(.59,.44,.6,.43);
     }
-    50% {
-        transform: translateX(50%);
+   /*  17% {
+        transform: translateX(20%);
+        animation-timing-function: cubic-bezier(.59,.44,.6,.43);       
+    } */
+    24% {
+        transform: translateX(30%);
+        animation-timing-function: cubic-bezier(.59,.44,.6,.43);
     }
-    90% {
-        transform: translateX(80%);
+    46% {
+        transform: translateX(60%);
+        animation-timing-function: cubic-bezier(.59,.44,.6,.43);
+    }
+    85%, 100% {
+        opacity: 1;
+    }
+        
+   100% {
+        transform: translateX(100%);           
+   }
+   }
+@keyframes load {
+    0% {
+        opacity: 1;
+        
+    }
+    20% {
+        opacity: 1;
+        
+    }
+    40% {
+        opacity: 1;
+        
+    }
+    60% {
+        opacity: 1;
+        
+    }
+    80% {
+        opacity: 1;
+        
     }
     100% {
-        transform: translateX(110%);
+        opacity: 0;
+        /* z-index: 0; */  
     }
+    
 }
+
+@keyframes homepage {
+    0% {
+        opacity: 0;
+       
+    }
+    20% {
+        opacity: 0;
+        
+    }
+    40% {
+        opacity: 0;
+        
+    }
+    60% {
+        opacity: 0;
+        
+    }
+    80% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+                 
+    }
+    
+}
+
 
 /******************************************************************************************************/
 /************************************** GENERAL *******************************************************/
@@ -47,7 +154,8 @@
 body {
     width: 100%;
     height: 100%;
-    margin: 0;        
+    margin: 0; 
+    position: relative;       
 }
 
 main {
