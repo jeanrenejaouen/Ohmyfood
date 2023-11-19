@@ -463,7 +463,7 @@ main .btn-explore::after {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 26.86px;
+    top: 24px;
     left: -12.51px;    
     z-index: 2;
 }
