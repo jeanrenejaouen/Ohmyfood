@@ -488,7 +488,7 @@ main .btn-explore {
 	}
 }
 .card {
-	width: 100%;
+	width: 96%;
 	height: 251px;
 	border-radius: 15px;
 	background-color: #ffffff;
@@ -534,9 +534,10 @@ main .btn-explore {
 	height: 29px;
 	display: flex;
 	justify-content: end;
-	position: absolute;
-	top: 3px;
-	right: 15px;
+	position: relative;
+	top: -245px;
+	right: 2px;
+	margin-top: -6px;
 	p {
 		width: 61.37px;
 		height: 13px;
@@ -558,8 +559,15 @@ main .btn-explore {
 	display: flex;
 	justify-content: end;
 	position: relative;
+	right: 15px;
 	background-color: white;
 	cursor: pointer;
+	&--heartA {
+		top: -30px;
+	}
+	&--heartB {
+		top: -5px;
+	}
 	&__bg {
 		color: transparent;
 		background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
@@ -585,6 +593,7 @@ main .btn-explore {
 	bottom: 45px;
 	right: -10px;
 }
+
 
 /**********************animation like page restaurant*********************************/
 .menu .fa-heart {

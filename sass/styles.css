@@ -519,7 +519,7 @@ main .btn-explore::after {
 }
 
 .card {
-  width: 100%;
+  width: 96%;
   height: 251px;
   border-radius: 15px;
   background-color: #ffffff;
@@ -571,9 +571,10 @@ main .btn-explore::after {
   height: 29px;
   display: flex;
   justify-content: end;
-  position: absolute;
-  top: 3px;
-  right: 15px;
+  position: relative;
+  top: -245px;
+  right: 2px;
+  margin-top: -6px;
 }
 
 .newGreen p {
@@ -596,8 +597,17 @@ main .btn-explore::after {
   display: flex;
   justify-content: end;
   position: relative;
+  right: 15px;
   background-color: white;
   cursor: pointer;
+}
+
+.heart--heartA {
+  top: -30px;
+}
+
+.heart--heartB {
+  top: -5px;
 }
 
 .heart__bg {
