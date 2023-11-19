@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,19 +17,18 @@
 
 <body>  
     <div class="loader">
-        <div class="mot">
-        <!-- <h1 class="titleLoad">ohmyfood ...</h1> -->
-            <h1 class="lettre">o</h1>
-            <h1 class="lettre">h</h1>
-            <h1 class="lettre">m</h1>
-            <h1 class="lettre">y</h1>
-            <h1 class="lettre">f</h1>
-            <h1 class="lettre">o</h1>
-            <h1 class="lettre">o</h1>
-            <h1 class="lettre">d</h1>
-            <h1 class="lettre">.</h1>
-            <h1 class="lettre">.</h1>
-            <h1 class="lettre">.</h1>
+        <div class="loader__word">        
+            <h1>o</h1>
+            <h1>h</h1>
+            <h1>m</h1>
+            <h1>y</h1>
+            <h1>f</h1>
+            <h1>o</h1>
+            <h1>o</h1>
+            <h1>d</h1>
+            <h1>.</h1>
+            <h1>.</h1>
+            <h1>.</h1>
         </div>
 
         <div class="loader__bar">            
@@ -43,18 +41,20 @@
     <header class="header-index">
 <!---------------------------------------- Logo ----------------------------------->
         <div class="log">
-            <div class="logo">                                        
+            <div class="log__logo">                                        
                 <h1>ohmyfood</h1>            
             </div>
         </div>
 <!-------------------------------------- LOCALISATION ----------------------------->
             <div class="loc">
-                <div class="location">                               
+                <div class="loc__location">                               
                     <i class="fa-solid fa-location-dot"></i>                    
                     <h3>Paris, Belleville</h3>
                 </div>                
             </div>
-    </header>    
+    </header> 
+    
+<!---------------------------------------MAIN---------------------------------------------------------->
 
     <main  class="main-index">
 <!-------------------------------------- SECTION BOOK -------------------------------------------------->
@@ -73,22 +73,22 @@
             <h2>Fonctionnement</h2>            
             <div>                
                                                        
-                    <button class="btn-choice">
-                        <div class="elipse1">
+                    <button class="btn btn--choice">
+                        <div class="elipse">
                              <div class="number">1</div>
                         </div> 
-                        <div class="btn-group">                      
+                        <div class="btn__content">                      
                             <i class="fa-solid fa-mobile-screen-button"></i>
                             Choisissez un restaurant
                             </div>                           
                         </button>                        
                
                 
-                    <button class="btn-compose">
-                        <div class="elipse2">
+                    <button class="btn btn--compose">
+                        <div class="elipse">
                             <div class="number">2</div>
                         </div>
-                        <div class="btn-group">                                              
+                        <div class="btn__content">                                              
                             <i class="fa-solid fa-list-ul"></i>
                             Composez votre menu                            
                         </div>
@@ -96,15 +96,15 @@
             
                 
                                    
-                    <button class="btn-taste">
-                        <div class="elipse3">
+                    <button class="btn btn--taste">
+                        <div class="elipse">
                             <div class="number">3</div>
                         </div>
-                        <div class="btn-group">
+                        <div class="btn__content">
                             <i class="fa-solid fa-store"></i>
                              Dégustez au restaurant
                         </div>    
-                        </button>                        
+                        </button>      
               
             </div>    
         </section>
@@ -112,22 +112,22 @@
 <!------------------------------------------ SECTION RESTAURANTS ------------------------------------------>
         <section class="resto">            
             <h2 id="rest">Restaurants</h2>
-            <div class="card-group">                
-                <div class="resto-card">
+            <div class="resto__cardGroup">                
+                <div class="resto__cardGroup--restoCard">
                     <a href="restaurants/La palette du goût.html">
                         <article class="card">
-                            <div class="divImg">
+                            <div class="card__divImg">
                             <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant-la-palette-du-gout">
                             </div>
-                            <div class="card-info">                        
+                            <div class="card__info">                        
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
+                                                                                                            
+                        </article>
                             <div class="newGreen">  
-                                <p id="new">Nouveau</p>
-                            </div>
-                                                                                
-                        </article>                        
+                                <p>Nouveau</p>
+                            </div>                    
                     </a> 
                      <div class="heart">
                         <i class="heart__noBg fa-regular fa-heart"></i>
@@ -136,31 +136,32 @@
 
                     <a href="restaurants/La note enchantée.html">
                         <article class="card">
-                            <div class="divImg">
+                            <div class="card__divImg">
                             <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant-la-note-enchantee">
                             </div>
-                            <div class="card-info">                        
+                            <div class="card__info">                        
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
-                            <div class="newGreen">  
-                                <p id="new">Nouveau</p>
-                            </div>                                                                               
-                        </article>    
+                                                                                                           
+                        </article> 
+                        <div class="newGreen">  
+                                <p>Nouveau</p>
+                            </div>   
                     </a>
                     <div class="heart">
                         <i class="heart__noBg fa-regular fa-heart"></i>
                         <i class="heart__bg fa-solid fa-heart"></i>
                     </div> 
-
+                </div>
                 
-                <div class="resto-card">
+                <div class="resto__cardGroup--restoCard">
                     <a href="restaurants/À la française.html">
                         <article class="card">
-                            <div class="divImg">
+                            <div class="card__divImg">
                             <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant-a-la-française">
                             </div>
-                            <div class="card-info">                        
+                            <div class="card__info">                        
                                 <h3>À la française</h3>
                                 <p>Cité Rouge</p>
                             </div>                                                                           
@@ -173,10 +174,10 @@
 
                     <a href="restaurants/Le délice des sens.html">
                         <article class="card">
-                            <div class="divImg">
+                            <div class="card__divImg">
                             <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant-le-delice-des-sens">
                             </div>
-                            <div class="card-info">                        
+                            <div class="card__info">                        
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>                                                                                
