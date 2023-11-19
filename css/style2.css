@@ -611,12 +611,7 @@ main .btn-explore::after {
         transform: scaleX(1);
     }
 
-/***** ANNIMATION LIKE PAGE RESTAURANT*****/
-.menu .fa-heart {
-    position: absolute;
-    top: -35px;
-    right: 7px;
-}
+
 /******************************************/
 
 /********************** FOOTER ********************************/
@@ -689,12 +684,22 @@ footer a {
     width: 95%;        
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
-    padding: 32px 13px 0px 13px;
+    padding: 32px 13px 0 13px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     position: relative;
     margin-top: -55px;
+}
+
+/* .menu .fa-heart {
+    position: absolute;
+    top: -35px;
+    right: 7px;
+} */
+
+.heartC {   
+    top: 35px;     
 }
 .fa-arrow-left {
     color: #353535;
@@ -728,11 +733,10 @@ footer a {
     margin-top: -12px;   
 }
 .starter {
-    width: 99%;       
+    width: 100%;       
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 40px;
+    gap: 12px;       
 }
 .starter h2, .plat h2, .dessert h2 {
     margin: 0;    
@@ -754,7 +758,8 @@ footer a {
     width: 99%;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: #f6f6f6;
 }
 .btn-cmd {
     width: 53.6%;
@@ -790,7 +795,9 @@ footer a {
     opacity: 0;
     z-index: -1;
     transition: opacity 250ms;
-  }
+  }  
+
+
   /*****************COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
   
   .btn-food {
@@ -868,7 +875,7 @@ footer a {
     align-items: end;   
     gap: 5px;
     position: absolute;
-    right: 15px;
+    right: 0;
     transition: 1s;
     /* transition: transform 300ms ease-in-out;  */
     }
