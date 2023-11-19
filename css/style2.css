@@ -576,7 +576,8 @@ main .btn-explore::after {
     display: flex;
     justify-content: end;
     position: relative;
-    right: 15px;
+    right: 17px;
+    top: 48px;
     background-color: white;
     cursor: pointer;   
 }
@@ -662,7 +663,7 @@ footer a {
 }
 /********************************************************************************************/
 /****************************** STYLE PAGE DE RESTAURANT ************************************/
-.arrow {
+.log__arrow {
     width: 30px;
     height: 30px;
     display: flex;
@@ -671,15 +672,24 @@ footer a {
     top: 17px;
     left: 17px;
 }
+
+.log__arrow a {
+    color: #353535;
+    width: 30px;    
+    font-size: 20px;        
+    text-align: center;    
+}
+
+.banner {
+    width: 100%; 
+    margin-top: -3px;  
+}
 .banner img {
     width: 99%;
     height: 275px;
     object-fit: cover;
 }
-.banner {
-    width: 100%; 
-    margin-top: -3px;  
-}
+
 .menu {
     width: 95%;        
     background-color: #f6f6f6;
@@ -692,52 +702,47 @@ footer a {
     margin-top: -55px;
 }
 
-/* .menu .fa-heart {
-    position: absolute;
-    top: -35px;
-    right: 7px;
-} */
-
-.heartC {   
-    top: 35px;     
-}
-.fa-arrow-left {
-    color: #353535;
-    width: 30px;    
-    font-size: 20px;        
-    text-align: center;    
-}
-
-.titre-page {
+.menu__titrePage {
     width: 100%;
     padding-left: 4px;
     padding-right: 4px;        
 }
-.titre-page h2 { 
+.menu__titrePage h2 { 
     width: 80%;
-    height: 41px;   
+    height: 27px;   
     color: #101010;
     font-size: 28px;
     font-family: Shrikhand;
     font-weight: 400; 
     margin: 0;
 }
-.titreStarter {
-    width: 275px;
-    height: 27px;
+
+.heartC {   
+    top: 35px;     
 }
-.borderGreen {   
-    width: 40px;
-    height: 0px;     
-    border-bottom: 3px #99E2D0 solid; 
-    margin-top: -12px;   
-}
+
 .starter {
     width: 100%;       
     display: flex;
     flex-direction: column;
     gap: 12px;       
 }
+.starter__titreStarter {
+    width: 275px;
+    height: 27px;
+}
+.starter__borderGreen {   
+    width: 40px;
+    height: 0px;     
+    border-bottom: 3px #99E2D0 solid; 
+    margin-top: -12px;   
+}
+.starter__buttonStarter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .starter h2, .plat h2, .dessert h2 {
     margin: 0;    
     color: black;
@@ -747,12 +752,6 @@ footer a {
     text-transform: uppercase;
     word-wrap: break-word
 }
-.buttonStarter {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
 
 .cmd {
     width: 99%;
@@ -761,7 +760,7 @@ footer a {
     padding-bottom: 40px;
     background-color: #f6f6f6;
 }
-.btn-cmd {
+.cmd__btnCmd {
     width: 53.6%;
     height: 50px;   
     border-radius: 25px;
@@ -778,10 +777,10 @@ footer a {
     position: relative;
     z-index: 1;       
 }
-.btn-cmd:hover::after {
+.cmd__btnCmd:hover::after {
     opacity: 1;
   }
-  .btn-cmd::after {
+.cmd__btnCmd::after {
     content: "";
     position: absolute;
     top: 0;
@@ -820,15 +819,10 @@ footer a {
 
 .flat {
     width: calc(100% - 50px);
-    height: 42px;
-    /* display: flex; */
+    height: 42px;    
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    /* white-space: nowrap;   
-    overflow: hidden;  
-    text-overflow: ellipsis;  */ 
-    /* flex-wrap: wrap; */
+    gap: 5px;   
     transition: 1s;     
 }
 
@@ -876,8 +870,7 @@ footer a {
     gap: 5px;
     position: absolute;
     right: 0;
-    transition: 1s;
-    /* transition: transform 300ms ease-in-out;  */
+    transition: 1s;    
     }
   
 .price p {
@@ -885,8 +878,7 @@ footer a {
 }
 
   
-  .check {
-   /*  width: 59px; */
+  .check {   
     width: 0;
     height: 72px;    
     border-radius: 0 15px 15px 0;  
@@ -898,8 +890,7 @@ footer a {
     position: absolute;
     right: 0;
     top: 0;
-    transition: 1s;
-    /* transition: transform 300ms ease-in-out;*/       
+    transition: 1s;           
   }
 
   .btn-food .check >i {
@@ -936,53 +927,52 @@ footer a {
 /*******************AU CHARGEMENT DE LA PAGE*******************************/
     .flat1{
         transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;	
-        /* transition : transform 500ms 150ms ease-in-out ; */
-        animation: flat-display 400ms 100ms both;
+        transform: scaleX(0);	        
+        animation: flat-display 400ms 100ms both; /** both : permet de figer le plat à la fin de l'animation **/
     }
     .flat2{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;	
+        transform-origin: left;  
+        transform: scaleX(0);	
         animation: flat-display 500ms 600ms both;
     }
     .flat3{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;        
+        transform-origin: left;  
+        transform: scaleX(0);        
         animation: flat-display 500ms 1200ms both;
     }
     .flat4{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;        
+        transform-origin: left;  
+        transform: scaleX(0);        
         animation: flat-display 500ms 1800ms both;
     }
     .flat5{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;        
+        transform-origin: left;  
+        transform: scaleX(0);        
         animation: flat-display 500ms 2400ms both;
     }
     .flat6{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;        
+        transform-origin: left;  
+        transform: scaleX(0);        
         animation: flat-display 500ms 3000ms both;
     }
     .flat7{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;        
+        transform-origin: left;  
+        transform: scaleX(0);        
         animation: flat-display 500ms 3600ms both;
     }
     .flat8{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;        
+        transform-origin: left;  
+        transform: scaleX(0);        
         animation: flat-display 500ms 4200ms both;
     }
     .flat9{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;       
+        transform-origin: left;  
+        transform: scaleX(0);       
         animation: flat-display 500ms 4800ms both;
     }
     .flat10{
-        transform-origin: left;  /*Place l’origine à gauche*/
-        transform : scaleX(0) ;        
+        transform-origin: left;  
+        transform: scaleX(0);        
         animation: flat-display 500ms 5400ms both;
     }
 

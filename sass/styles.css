@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @import 'variables';
 @import '_mixins.scss';
 @import '_general.scss'; */
@@ -698,3 +699,377 @@ footer a {
   font-size: 13px;
   margin-right: 10.08px;
 }
+
+/***********************************************************************************************************/
+/****************************** STYLE PAGE DE RESTAURANT ************************************/
+.log__arrow {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.log__arrow a {
+  color: #353535;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  margin-top: -3px;
+}
+
+.banner img {
+  width: 99%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.menu {
+  width: 95%;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  padding: 32px 13px 0 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  margin-top: -55px;
+}
+
+.menu__titrePage {
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.menu__titrePage h2 {
+  width: 80%;
+  height: 27px;
+  color: #101010;
+  font-size: 28px;
+  font-family: Shrikhand;
+  font-weight: 400;
+  margin: 0;
+}
+
+.heartC {
+  top: 35px;
+}
+
+.starter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.starter__titreStarter {
+  width: 275px;
+  height: 27px;
+}
+
+.starter__borderGreen {
+  width: 40px;
+  height: 0px;
+  border-bottom: 3px #99E2D0 solid;
+  margin-top: -12px;
+}
+
+.starter__buttonStarter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.starter h2, .plat h2, .dessert h2 {
+  margin: 0;
+  color: black;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.cmd {
+  width: 99%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-color: #f6f6f6;
+}
+
+.cmd__btnCmd {
+  width: 53.6%;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  border-color: transparent;
+  cursor: pointer;
+  background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cmd__btnCmd:hover::after {
+  opacity: 1;
+}
+
+.cmd__btnCmd::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-color: transparent;
+  background: linear-gradient(231deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+/*****************COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
+.btn-food {
+  width: 90%;
+  height: 42px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.btn-food > i {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: #99E2D0;
+  font-size: 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 1s;
+  transform: rotate(90deg);
+}
+
+.btn-food:active .flat {
+  width: calc(100% - 59px - 40px);
+}
+
+.btn-food:active .price {
+  width: 94px;
+}
+
+.btn-food:active .check {
+  width: 59px;
+}
+
+.btn-food:active .check .fa-circle-check {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.flat {
+  width: calc(100% - 50px);
+  height: 42px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  transition: 1s;
+}
+
+.flat p {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  text-align: start;
+}
+
+.flat__titlePlat {
+  width: 100%;
+  height: 21px;
+  color: black;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-weight: 550;
+  text-align: start;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.flat__contentPlat {
+  width: 100%;
+  height: 19px;
+  color: black;
+  font-size: 15.04px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  text-align: start;
+}
+
+.price {
+  width: 50px;
+  height: 42px;
+  color: #353535;
+  font-size: 15.04px;
+  font-family: Roboto;
+  font-weight: 700;
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  position: absolute;
+  right: 0;
+  transition: 1s;
+}
+
+.price p {
+  margin: 0;
+}
+
+.check {
+  width: 0;
+  height: 72px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  color: white;
+  background-color: #99e2d0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 1s;
+}
+
+.check > i {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: #99E2D0;
+  font-size: 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 1s;
+  transform: rotate(90deg);
+}
+
+/*******************APPARITION DES PLATS UN PAR UN*************************/
+/*******************AU CHARGEMENT DE LA PAGE*******************************/
+.flat1 {
+  transform-origin: left;
+  /*Place l’origine à gauche*/
+  transform: scaleX(0);
+  animation: flat-display 400ms 100ms both;
+  /** both : permet de figer le plat à la fin de l'animation **/
+}
+
+.flat2 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 600ms both;
+}
+
+.flat3 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 1200ms both;
+}
+
+.flat4 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 1800ms both;
+}
+
+.flat5 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 2400ms both;
+}
+
+.flat6 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 3000ms both;
+}
+
+.flat7 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 3600ms both;
+}
+
+.flat8 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 4200ms both;
+}
+
+.flat9 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 4800ms both;
+}
+
+.flat10 {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: flat-display 500ms 5400ms both;
+}
+
+@keyframes flat-display {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  17% {
+    transform: scaleX(0.5);
+    opacity: 0.3;
+    animation-timing-function: cubic-bezier(0.72, 0.42, 0.3, 0.89);
+  }
+  24% {
+    transform: scaleX(0.7);
+    opacity: 0.5;
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  46% {
+    transform: scaleX(0.85);
+    opacity: 0.8;
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
