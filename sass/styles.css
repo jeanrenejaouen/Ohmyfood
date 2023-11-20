@@ -6,6 +6,7 @@
 /********************************************GENERAL*****************************************************************/
 /**Variables**/
 /**Mixins**/
+/*********************************************************************************/
 body {
   width: 100%;
   height: 100%;
@@ -600,17 +601,18 @@ main .btn-explore::after {
   display: flex;
   justify-content: end;
   position: relative;
-  right: 15px;
   background-color: white;
   cursor: pointer;
 }
 
 .heart--heartA {
   top: -30px;
+  right: 15px;
 }
 
 .heart--heartB {
   top: -5px;
+  right: 15px;
 }
 
 .heart__bg {
@@ -760,8 +762,8 @@ footer a {
   margin: 0;
 }
 
-.heartC {
-  top: 35px;
+.titrePage__heartC {
+  top: 15px;
 }
 
 .starter {
@@ -845,7 +847,7 @@ footer a {
   transition: opacity 250ms;
 }
 
-/*****************COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
+/*****************BOUTON + COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
 .btn-food {
   width: 90%;
   height: 42px;
@@ -985,8 +987,8 @@ footer a {
 /*******************AU CHARGEMENT DE LA PAGE*******************************/
 .flat1 {
   transform-origin: left;
-  /*Place l’origine à gauche*/
   transform: scaleX(0);
+  /* transform-origin: left; Déplace l'origine à gauche */
   animation: flat-display 400ms 100ms both;
   /** both : permet de figer le plat à la fin de l'animation **/
 }
@@ -1063,7 +1065,7 @@ footer a {
   46% {
     transform: scaleX(0.85);
     opacity: 0.8;
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    animation-timing-function: cubic-bezier(1, 0.25, 0.25, 1);
   }
   85%, 100% {
     opacity: 1;

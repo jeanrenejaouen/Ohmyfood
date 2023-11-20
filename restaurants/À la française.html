@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>   
-    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../sass/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" >
@@ -19,162 +19,200 @@
            
     <header>
         <div class="log">
-            <div class="arrow"> 
+            <div class="log__arrow"> 
                     <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
             <div class="logo">                                               
                 <h1>ohmyfood</h1> 
             </div>           
         </div>                                
-    </header>    
-
+    </header> 
     <main>
         <div class="banner">
-            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant-la-palette-du-gout">
+            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant-a-la-française">
         </div>
             
         <div class="menu">            
-            <div class="titre-page">
+            <div class="menu__titrePage">
                 <h2>À la française</h2>
-                <i class="fa-regular fa-heart"></i>                
+                
+                <div class="heart titrePage__heartC">
+                    <i class="heart__noBg fa-regular fa-heart"></i>
+                    <i class="heart__bg fa-solid fa-heart"></i>
+                </div>  
+               
             </div>            
                 
             <section class="starter"> 
-                <div class="titreStarter">                                  
+                <div class="starter__titreStarter">                                  
                     <h2>Entrées</h2> 
                 </div> 
-                <div class="borderGreen"></div>                                 
-                <div class="buttonStarter">                    
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Tartare de poulpe acidulé</h3> 
-                                <h4>Aux zestes d'orange</h4>
-                            </div>
-                            <div class="price">                                
-                                <p>25</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Velouté de légumes d'antan</h3> 
-                                <h4>Carotte, panais, topinambour</h4>
-                            </div>
-                            <div class="price">                                
-                                <p>35</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Soupe à l'oignon</h3> 
-                                <h4>Revisitée</h4>
-                            </div>
-                            <div class="price">                                
-                                <p>20</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>                    
+                <div class="starter__borderGreen"></div> 
+
+                <div class="starter__buttonStarter">                    
+                   
+                            <div class="btn-food flat1">                             
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Tartare de poulpe acidulé</span></p> 
+                                    <p><span class="flat__contentPlat">Aux zestes d'orange</span></p>
+                                </div>                        
+                                 <div class="price">                                
+                                    <p>25</p>
+                                    <p>€</p>                                                                        
+                                </div>                                                    
+                                <div class="check">                                    
+                                    <i class="fa-regular fa-circle-check"></i>                                    
+                                </div>                           
+                            </div>                    
+                    
+                       
+                            <div class="btn-food flat2">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Velouté de légumes d'antan</span></p> 
+                                    <p><span class="flat__contentPlat">Carotte, panais, topinambour</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>35</p>
+                                    <p>€</p>                                                                  
+                                </div>                            
+                                <div class="check">                                   
+                                    <i class="fa-regular fa-circle-check"></i>                                    
+                                </div>                            
+                            </div>                   
+
+                    
+                            <div class="btn-food flat3">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Soupe à l'oignon</span></p> 
+                                    <p><span class="flat__contentPlat">Revisitée</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>20</p>
+                                    <p>€</p>                                                                  
+                                </div>                             
+                                <div class="check">                                
+                                    <i class="fa-regular fa-circle-check"></i>                                    
+                                </div> 
+                            </div> 
+
                 </div>
             </section>
 
             <section class="starter"> 
-                <div class="titreStarter">                                  
+                <div class="starter__titreStarter">                                  
                     <h2>Plats</h2>                    
                 </div> 
-                <div class="borderGreen"></div>               
-                <div class="buttonStarter">                    
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Coquilles Saint-Jacques</h3> 
-                                <h4>Accompagnées d'une purée de panais</h4>
+                <div class="starter__borderGreen"></div>
+
+                <div class="starter__buttonStarter">                   
+                       
+                            <div class="btn-food flat4">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Coquilles Saint-Jacques</span></p> 
+                                    <p><span class="flat__contentPlat">Accompagnées d'une purée de panais</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>40</p>
+                                    <p>€</p>                                                                  
+                                </div>                            
+                                <div class="check">                                   
+                                    <i class="fa-regular fa-circle-check"></i>                                    
+                                </div>    
                             </div>
-                            <div class="price">                                
-                                <p>40</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Magret de canard</h3> 
-                                <h4>Et parmentier de pommes de terre</h4>
-                            </div>
-                            <div class="price">                                
-                                <p>35</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Pigeonneau d'Ille-et-Vilaine</h3> 
-                                <h4>Sur son lit de gnocchis aux légumes</h4>
-                            </div>
-                            <div class="price">                                
-                                <p>44</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>                    
+                   
+                        
+                            <div class="btn-food flat5">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Magret de canard</span></p> 
+                                    <p><span class="flat__contentPlat">Et parmentier de pommes de terre</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>35</p>
+                                    <p>€</p>                                                                  
+                                </div>                             
+                                <div class="check">                                   
+                                    <i class="fa-regular fa-circle-check"></i>                                    
+                                </div> 
+                            </div>       
+                                                
+                        
+                            <div class="btn-food flat6">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Pigeonneau d’Ille-et-Vilaine</span></p> 
+                                    <p><span class="flat__contentPlat">Sur son lit de gnocchis aux légumes</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>44</p>
+                                    <p>€</p>                                                                  
+                                </div>                            
+                                <div class="check">                                   
+                                    <i class="fa-regular fa-circle-check"></i>                                    
+                                </div>    
+                            </div>             
+
                 </div>
             </section>
+
+
             <section class="starter">                
-                <div class="titreStarter">                                       
+                <div class="starter__titreStarter">                                       
                     <h2>Desserts</h2>                    
                 </div> 
-                <div class="borderGreen"></div>               
-                <div class="buttonStarter">                    
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Pétales de violettes glacés</h3> 
-                                <h4>Et purée de noisettes</h4>
+                <div class="starter__borderGreen"></div>
+
+                <div class="starter__buttonStarter">
+                    
+                        
+                            <div class="btn-food flat7">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Pétales de violettes glacés</span></p> 
+                                    <p><span class="flat__contentPlat">Et purée de noisettes</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>18</p>
+                                    <p>€</p>                                                                  
+                                </div>                            
+                                <div class="check">                                   
+                                        <i class="fa-regular fa-circle-check"></i>                                    
+                                </div>    
                             </div>
-                            <div class="price">                                
-                                <p>18</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Fondant au chocolat</h3> 
-                                <h4>Revisité</h4>
+                   
+                        
+                            <div class="btn-food flat8">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Fondant au chocolat</span></p> 
+                                    <p><span class="flat__contentPlat">Revisité</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>22</p>
+                                    <p>€</p>                                                                  
+                                </div>                           
+                                <div class="check">                                   
+                                        <i class="fa-regular fa-circle-check"></i>                                    
+                                </div>    
                             </div>
-                            <div class="price">                                
-                                <p>22</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-food">
-                            <div class="flat">                           
-                                <h3 id="name-flat">Millefeuille croustillant</h3> 
-                                <h4>Myrtilles et pâte d'amande</h4>
-                            </div>
-                            <div class="price">                                
-                                <p>23</p>
-                                <p>€</p>
-                            </div>                                       
-                        </button>
-                    </a>                    
+                    
+                        
+                            <div class="btn-food flat9">
+                                <div class="flat">                           
+                                    <p><span class="flat__titlePlat">Millefeuille croustillant</span></p> 
+                                    <p><span class="flat__contentPlat">Myrtilles et pâte d’amande</span></p>
+                                </div>
+                                <div class="price">                                
+                                    <p>23</p>
+                                    <p>€</p>                                                                  
+                                </div>                            
+                                <div class="check">                                   
+                                        <i class="fa-regular fa-circle-check"></i>                                     
+                                </div>    
+                            </div>               
+
                 </div>
             </section>
+            
             <a href="#">
                 <div class="cmd">
-                    <button class="btn-cmd">Commander</button>
+                    <button class="cmd__btnCmd">Commander</button>
                 </div>    
             </a>
 

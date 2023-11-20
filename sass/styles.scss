@@ -26,6 +26,12 @@ $tertiary-color: #99E2D0;
 	z-index: 1;
 }
 
+@mixin deflat {
+	transform-origin: left;
+	transform: scaleX(0);
+}
+/*********************************************************************************/
+
 body {
 	width: 100%;
 	height: 100%;
@@ -564,15 +570,16 @@ main .btn-explore {
 	width: 90%;
 	display: flex;
 	justify-content: end;
-	position: relative;
-	right: 15px;
+	position: relative;	
 	background-color: white;
 	cursor: pointer;
 	&--heartA {
 		top: -30px;
+		right: 15px;
 	}
 	&--heartB {
 		top: -5px;
+		right: 15px;
 	}
 	&__bg {
 		color: transparent;
@@ -711,8 +718,8 @@ footer {
 }
 
 
-.heartC {
-	top: 35px;
+.titrePage__heartC {
+	top: 15px;
 }
 
 .starter {
@@ -779,7 +786,7 @@ footer {
 
 
 
-/*****************COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
+/*****************BOUTON + COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
 
 .btn-food {
 	width: 90%;
@@ -906,54 +913,44 @@ footer {
 /*******************APPARITION DES PLATS UN PAR UN*************************/
 /*******************AU CHARGEMENT DE LA PAGE*******************************/
 
-.flat1{
-	transform-origin: left;  /*Place l’origine à gauche*/
-	transform: scaleX(0);	        
+.flat1{	  
+	@include deflat;   /* transform-origin: left; Déplace l'origine à gauche */   
 	animation: flat-display 400ms 100ms both; /** both : permet de figer le plat à la fin de l'animation **/
 }
 .flat2{
-	transform-origin: left;  
-	transform: scaleX(0);	
+	@include deflat;	
 	animation: flat-display 500ms 600ms both;
 }
 .flat3{
-	transform-origin: left;  
-	transform: scaleX(0);        
+	@include deflat;        
 	animation: flat-display 500ms 1200ms both;
 }
 .flat4{
-	transform-origin: left;  
-	transform: scaleX(0);        
+	@include deflat;        
 	animation: flat-display 500ms 1800ms both;
 }
 .flat5{
-	transform-origin: left;  
-	transform: scaleX(0);        
+	@include deflat;       
 	animation: flat-display 500ms 2400ms both;
 }
 .flat6{
-	transform-origin: left;  
-	transform: scaleX(0);        
+	@include deflat;        
 	animation: flat-display 500ms 3000ms both;
 }
 .flat7{
-	transform-origin: left;  
-	transform: scaleX(0);        
+	@include deflat;        
 	animation: flat-display 500ms 3600ms both;
 }
 .flat8{
-	transform-origin: left;  
-	transform: scaleX(0);        
+	@include deflat;        
 	animation: flat-display 500ms 4200ms both;
 }
 .flat9{
-	transform-origin: left;  
-	transform: scaleX(0);       
+	@include deflat;       
 	animation: flat-display 500ms 4800ms both;
 }
 .flat10{
-	transform-origin: left;  
-	transform: scaleX(0);        
+	@include deflat;        
 	animation: flat-display 500ms 5400ms both;
 }
 
@@ -975,7 +972,7 @@ footer {
 	46% {
 		transform: scaleX(.85);
 		opacity: 0.8;
-		animation-timing-function: cubic-bezier(.25,0.25,1);
+		animation-timing-function: cubic-bezier(1,0.25,0.25,1);
 	}
 	85%,100% {
 		opacity: 1;
