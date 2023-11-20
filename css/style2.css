@@ -1004,6 +1004,12 @@ footer a {
         }
     }
 
+    /* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+
+}
    
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -1013,9 +1019,3 @@ footer a {
     
 }
    
-/* Le code ci-dessous correspond à la version responsive uniquement */
-/****** Media queries ***********/
-/* Small devices (phones, less than 768px) */
-@media screen and (max-width: 767.98px) {
-
-}
