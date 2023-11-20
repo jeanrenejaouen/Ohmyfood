@@ -472,7 +472,7 @@ main .btn-explore::after {
 .elipse {
   width: 24px;
   height: 24px;
-  background-color: var(#9356DC);
+  background-color: #9356DC;
   border-radius: 9999px;
   display: flex;
   justify-content: center;

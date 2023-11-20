@@ -448,7 +448,7 @@ main .btn-explore {
 .elipse {
 	width: 24px;
 	height: 24px;
-	background-color: var($primary-color);
+	background-color: $primary-color;
 	border-radius: 9999px;
 	display: flex;
 	justify-content: center;
