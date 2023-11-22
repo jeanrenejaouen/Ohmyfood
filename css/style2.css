@@ -15,14 +15,14 @@
     position: absolute;
     top: 115px;
 }
-.footer-index {
+/* .footer-index {
     position: absolute;
     top: 2140px;
-}
+} */
 
 .loader {
     width: 100%;
-    height: 2325px;
+    height: 2240px;   /*2325px*/
     background-color: black;
     position: relative;
     display: flex;    
@@ -357,6 +357,15 @@ main .btn-explore {
     position: relative;    
     z-index: 1;       
 }
+main .btn-explore h3{   
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;    
+}
+
 main .btn-explore:hover::after {
     opacity: 1;    
   }
@@ -379,14 +388,14 @@ main .btn-explore::after {
 /********************** SECTION FONCTIONNEMENT ********************************/
 
 .functioning {
-    width: 100%;
-    height: 390px; 
+    width: 100%;    
     display: flex;
     flex-direction: column;    
     padding-top: 48px; 
     padding-left: 20px;
     padding-right: 20px; 
     gap: 26px;
+    margin-bottom: 43.07px;
 }
 .functioning h2 {
     width: 100%;
@@ -402,32 +411,23 @@ main .btn-explore::after {
     border-radius: 20px;
     border-color: transparent; 
     position: relative;
-    z-index: 1;        
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24.93px;       
 }
 .btn__content {    
-    width: 100%;
+    height: 19px;
+    display: flex;
+    margin-left: -90px;         
+}  
+
+.btn__content h3 {
     height: 19px;
     color: black;
     font-size: 16px;    
     font-weight: 500;
-    position: absolute;
-    left: -15px;
-    top: 21px;    
-}  
-
-.btn--choice { 
-    padding-left: 33.47px; 
-    position: relative;  
-    z-index: 1;
-}
-.btn--compose {      
-    margin-top: 24.92px;
-    margin-bottom: 24.94px;    
-    padding-left: 34.49px;
-}
-.btn--taste {      
-    margin-bottom: 68px;    
-    padding-left: 35.49px;
 }
 
 .fa-mobile-screen-button { 
@@ -435,23 +435,27 @@ main .btn-explore::after {
     height: 19.9px;   
     font-size: 19.9px;    
     color: #7e7e7e;  
-    padding-right: 27px;   
+    padding-right: 27px;
+    padding-left: 32px; 
+    margin-top: -4px;  
 }
 .fa-list-ul {
     width: 16px;
     height: 15.92px;   
     font-size: 19.9px;    
     color: #7e7e7e;
-    padding-right: 23px;
-    margin-left: -15px;   
+    padding-right: 28.55px;
+    padding-left: 16px;
+    margin-top: -4px;   
 }
 .fa-store {
     width: 18px;
     height: 17.91px;   
     font-size: 18px;    
     color: #9356DC; 
-    padding-right: 20px; 
-    margin-left: -10px;   
+    padding-right: 25px; 
+    padding-left: 25px; 
+    margin-top: -2px;  
 }
 
 .elipse {
@@ -484,23 +488,26 @@ main .btn-explore::after {
     display: flex;
     flex-direction: column;    
 }
+.resto a {
+    height: 251px;
+}
 .resto h2 {
     width: 100%;
     height: 68px;
     margin-top: 54px;  
     margin-bottom: -20px;  
 }
-.resto__cardGroup--restoCard {
+.resto__cardGroup__Card {
     width: 100%;    
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 9px;
 }
 
 .resto__cardGroup {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 9px;
     margin-bottom: 66px;
 }
 .card {
@@ -577,24 +584,11 @@ main .btn-explore::after {
     justify-content: end;
     position: relative;
     right: 17px;
-    top: 48px;
+    top: 5px;
     background-color: white;
     cursor: pointer;   
 }
-.heart--heartA {
-    top: -30px;    
-}
-.heart--heartB {
-    top: -5px;    
-}
-.fa-heart {
-    width: 22px;
-    height: 21px;
-    font-size: 22px;
-    position: absolute;
-    bottom: 45px;
-    right: -10px;
-}
+
 .heart__bg {
     color: transparent;
     background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%); 
@@ -612,7 +606,14 @@ main .btn-explore::after {
         transform: scaleX(1);
     }
 
-
+.fa-heart {
+        width: 22px;
+        height: 21px;
+        font-size: 22px;
+        position: absolute;
+        bottom: 45px;
+        right: -10px;
+}
 /******************************************/
 
 /********************** FOOTER ********************************/
@@ -631,6 +632,7 @@ footer h3 {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
+    text-align: start;
 }
 footer li {
     color: white;    
@@ -994,7 +996,7 @@ footer a {
         46% {
             transform: scaleX(.85);
             opacity: 0.8;
-            animation-timing-function: cubic-bezier(.25,0.25,1);
+            animation-timing-function: cubic-bezier(0.7,.25,0.25,1);
         }
         85%,100% {
             opacity: 1;

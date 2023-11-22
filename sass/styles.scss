@@ -34,7 +34,6 @@ $tertiary-color: #99E2D0;
 
 body {
 	width: 100%;
-	height: 100%;
 	margin: 0;
 	position: relative;
 }
@@ -87,14 +86,10 @@ a {
 	position: absolute;
 	top: 115px;
 }
-.footer-index {
-	position: absolute;
-	top: 2140px;
-}
 
 .loader {
 	width: 100%;
-	height: 2325px;
+	height: 2262px;
 	background-color: black;
 	position: relative;
 	display: flex;
@@ -352,10 +347,29 @@ main .taste {
 	padding-bottom: 57px;
 }
 main .btn-explore {
-	@include btnExpCmd;
-	width: 65%;	
+	width: 65%;
+	height: 50px;
+	border-radius: 25px;
+	color: white;
 	font-size: 16px;
-	font-weight: 500;	
+	font-weight: 500;
+	border-color: transparent;
+	cursor: pointer;
+	background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	h3 {
+		color: white;
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+	}
 	&:hover::after {
 		opacity: 1;
 	}
@@ -367,7 +381,7 @@ main .btn-explore {
 		bottom: 0;
 		left: 0;
 		border-color: transparent;
-		background: linear-gradient(231deg, $primary-color 0%, $secondary-color 100%);
+		background: linear-gradient(231deg, #9356DC 0%, #FF79DA 100%);
 		transition: opacity 250ms, box-shadow 400ms ease-in-out;
 		border-radius: 25px;
 		opacity: 0;
@@ -376,17 +390,18 @@ main .btn-explore {
 	}
 }
 
+
 /*********************************************section fonctionnement****************************************/
 
 .functioning {
-	width: 100%;
-	height: 390px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 48px;
-	padding-left: 20px;
-	padding-right: 20px;
-	gap: 26px;
+	width: 100%;    
+    display: flex;
+    flex-direction: column;    
+    padding-top: 48px; 
+    padding-left: 20px;
+    padding-right: 20px; 
+    gap: 26px;
+    margin-bottom: 43.07px;
 	h2 {
 		width: 100%;
 		height: 31px;
@@ -403,53 +418,49 @@ main .btn-explore {
 	border-color: transparent;
 	position: relative;
 	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24.93px;
 	&__content {
-		width: 100%;
 		height: 19px;
-		color: black;
-		font-size: 16px;
-		font-weight: 500;
-		position: absolute;
-		left: -15px;
-		top: 21px;
-	}
-	&--choice {
-		padding-left: 33.47px;
-		position: relative;
-		z-index: 1;
-	}
-	&--compose {
-		margin-top: 24.92px;
-		margin-bottom: 24.94px;
-		padding-left: 34.49px;
-	}
-	&--taste {
-		margin-bottom: 68px;
-		padding-left: 35.49px;
+		display: flex;
+		margin-left: -90px;
+		h3 {
+			height: 19px;
+			color: black;
+			font-size: 16px;
+			font-weight: 500;
+		}
 	}
 }
+
 .fa-mobile-screen-button {
 	width: 13.02px;
-	height: 19.9px;
-	font-size: 19.9px;
-	color: #7e7e7e;
-	padding-right: 27px;
+    height: 19.9px;   
+    font-size: 19.9px;    
+    color: #7e7e7e;  
+    padding-right: 27px;
+    padding-left: 32px; 
+    margin-top: -4px;
 }
 .fa-list-ul {
 	width: 16px;
-	height: 15.92px;
-	font-size: 19.9px;
-	color: #7e7e7e;
-	padding-right: 23px;
-	margin-left: -15px;
+    height: 15.92px;   
+    font-size: 19.9px;    
+    color: #7e7e7e;
+    padding-right: 28.55px;
+    padding-left: 16px;
+    margin-top: -4px;
 }
 .fa-store {
 	width: 18px;
-	height: 17.91px;
-	font-size: 18px;
-	color: $primary-color;
-	padding-right: 20px;
-	margin-left: -10px;
+    height: 17.91px;   
+    font-size: 18px;    
+    color: #9356DC; 
+    padding-right: 25px; 
+    padding-left: 25px; 
+    margin-top: -2px;
 }
 .elipse {
 	width: 24px;
@@ -480,25 +491,29 @@ main .btn-explore {
 	background-color: #f6f6f6;
 	display: flex;
 	flex-direction: column;
+	a {
+		height: 251px;
+	}
 	h2 {
 		width: 100%;
 		height: 68px;
 		margin-top: 54px;
 		margin-bottom: -20px;
 	}
-	&__cardGroup--restoCard {
+	&__cardGroup__Card {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 18px;
+		gap: 9px;
 	}
 	&__cardGroup {
 		display: flex;
 		flex-direction: column;
-		gap: 18px;
+		gap: 9px;
 		margin-bottom: 66px;
 	}
 }
+
 .card {
 	width: 96%;
 	height: 251px;
@@ -570,20 +585,14 @@ main .btn-explore {
 	width: 90%;
 	display: flex;
 	justify-content: end;
-	position: relative;	
+	position: relative;
+	right: 17px;
+	top: 5px;
 	background-color: white;
 	cursor: pointer;
-	&--heartA {
-		top: -30px;
-		right: 15px;
-	}
-	&--heartB {
-		top: -5px;
-		right: 15px;
-	}
 	&__bg {
 		color: transparent;
-		background: linear-gradient(194deg, $primary-color 0%, $secondary-color 100%);
+		background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
 		-webkit-background-clip: text;
 		opacity: 0;
 		transform: scaleX(0);
@@ -598,6 +607,7 @@ main .btn-explore {
 		transform: scaleX(1);
 	}
 }
+
 .fa-heart {
 	width: 22px;
 	height: 21px;
@@ -632,6 +642,7 @@ footer {
 		margin: 0;
 		font-size: 18px;
 		font-weight: 400;
+		text-align: start;
 	}
 	li {
 		color: white;

@@ -9,7 +9,6 @@
 /*********************************************************************************/
 body {
   width: 100%;
-  height: 100%;
   margin: 0;
   position: relative;
 }
@@ -70,14 +69,9 @@ a {
   top: 115px;
 }
 
-.footer-index {
-  position: absolute;
-  top: 2140px;
-}
-
 .loader {
   width: 100%;
-  height: 2325px;
+  height: 2262px;
   background-color: black;
   position: relative;
   display: flex;
@@ -349,9 +343,12 @@ main .taste {
 }
 
 main .btn-explore {
+  width: 65%;
   height: 50px;
   border-radius: 25px;
   color: white;
+  font-size: 16px;
+  font-weight: 500;
   border-color: transparent;
   cursor: pointer;
   background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
@@ -361,8 +358,14 @@ main .btn-explore {
   justify-content: center;
   position: relative;
   z-index: 1;
-  width: 65%;
+}
+
+main .btn-explore h3 {
+  color: white;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
 }
 
@@ -389,13 +392,13 @@ main .btn-explore::after {
 /*********************************************section fonctionnement****************************************/
 .functioning {
   width: 100%;
-  height: 390px;
   display: flex;
   flex-direction: column;
   padding-top: 48px;
   padding-left: 20px;
   padding-right: 20px;
   gap: 26px;
+  margin-bottom: 43.07px;
 }
 
 .functioning h2 {
@@ -414,34 +417,23 @@ main .btn-explore::after {
   border-color: transparent;
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24.93px;
 }
 
 .btn__content {
-  width: 100%;
+  height: 19px;
+  display: flex;
+  margin-left: -90px;
+}
+
+.btn__content h3 {
   height: 19px;
   color: black;
   font-size: 16px;
   font-weight: 500;
-  position: absolute;
-  left: -15px;
-  top: 21px;
-}
-
-.btn--choice {
-  padding-left: 33.47px;
-  position: relative;
-  z-index: 1;
-}
-
-.btn--compose {
-  margin-top: 24.92px;
-  margin-bottom: 24.94px;
-  padding-left: 34.49px;
-}
-
-.btn--taste {
-  margin-bottom: 68px;
-  padding-left: 35.49px;
 }
 
 .fa-mobile-screen-button {
@@ -450,6 +442,8 @@ main .btn-explore::after {
   font-size: 19.9px;
   color: #7e7e7e;
   padding-right: 27px;
+  padding-left: 32px;
+  margin-top: -4px;
 }
 
 .fa-list-ul {
@@ -457,8 +451,9 @@ main .btn-explore::after {
   height: 15.92px;
   font-size: 19.9px;
   color: #7e7e7e;
-  padding-right: 23px;
-  margin-left: -15px;
+  padding-right: 28.55px;
+  padding-left: 16px;
+  margin-top: -4px;
 }
 
 .fa-store {
@@ -466,8 +461,9 @@ main .btn-explore::after {
   height: 17.91px;
   font-size: 18px;
   color: #9356DC;
-  padding-right: 20px;
-  margin-left: -10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: -2px;
 }
 
 .elipse {
@@ -501,6 +497,10 @@ main .btn-explore::after {
   flex-direction: column;
 }
 
+.resto a {
+  height: 251px;
+}
+
 .resto h2 {
   width: 100%;
   height: 68px;
@@ -508,17 +508,17 @@ main .btn-explore::after {
   margin-bottom: -20px;
 }
 
-.resto__cardGroup--restoCard {
+.resto__cardGroup__Card {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 9px;
 }
 
 .resto__cardGroup {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 9px;
   margin-bottom: 66px;
 }
 
@@ -601,18 +601,10 @@ main .btn-explore::after {
   display: flex;
   justify-content: end;
   position: relative;
+  right: 17px;
+  top: 5px;
   background-color: white;
   cursor: pointer;
-}
-
-.heart--heartA {
-  top: -30px;
-  right: 15px;
-}
-
-.heart--heartB {
-  top: -5px;
-  right: 15px;
 }
 
 .heart__bg {
@@ -668,6 +660,7 @@ footer h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
+  text-align: start;
 }
 
 footer li {
