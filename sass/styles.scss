@@ -110,7 +110,7 @@ a {
 		padding-left: 50px;
 	}
 	img {
-		width: 50%;
+		width: 30%;
 		display: flex;
 		align-items: start;
 		justify-content: start;
@@ -332,8 +332,8 @@ main .book {
 		font-size: 24px;
 		font-weight: 700;
 		color: black;
-		display: block;
-		width: 100%;
+		padding-left: 42px;
+		padding-right: 58px;
 		height: 68px;
 		text-align: center;
 		margin: 0;
@@ -347,7 +347,7 @@ main .taste {
 	padding-bottom: 57px;
 }
 main .btn-explore {
-	width: 65%;
+	width: 218px;
 	height: 50px;
 	border-radius: 25px;
 	color: white;
@@ -394,22 +394,29 @@ main .btn-explore {
 /*********************************************section fonctionnement****************************************/
 
 .functioning {
-	width: 100%;    
-    display: flex;
-    flex-direction: column;    
-    padding-top: 48px; 
-    padding-left: 20px;
-    padding-right: 20px; 
-    gap: 26px;
-    margin-bottom: 43.07px;
+	/* width: 100%; */
+	display: flex;
+	flex-direction: column;
+	padding-top: 48px;
+	padding-left: 20px;
+	padding-right: 20px;
+	gap: 26px;
+	margin-bottom: 43.07px;
 	h2 {
 		width: 100%;
 		height: 31px;
 		margin: 0;
 	}
+	&__bloc {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 }
+}
+
 .btn {
-	width: 90%;
+	min-width: 300px;
+    max-width: 100%;
 	height: 72.4px;
 	padding: 0;
 	background-color: #f6f6f6;
@@ -422,6 +429,7 @@ main .btn-explore {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 24.93px;
+	margin-left: 10px;
 	&__content {
 		height: 19px;
 		display: flex;
@@ -586,8 +594,7 @@ main .btn-explore {
 	display: flex;
 	justify-content: end;
 	position: relative;
-	right: 17px;
-	top: 5px;
+	right: -10px;	
 	background-color: white;
 	cursor: pointer;
 	&__bg {
@@ -614,7 +621,7 @@ main .btn-explore {
 	font-size: 22px;
 	position: absolute;
 	bottom: 45px;
-	right: -10px;
+	right: 20px;
 }
 
 
@@ -703,7 +710,7 @@ footer {
 	}
 }
 .menu {
-	width: 95%;
+	/* width: 95%; */
 	background-color: #f6f6f6;
 	border-radius: 40px 40px 0 0;
 	padding: 32px 13px 0 13px;
@@ -771,7 +778,7 @@ footer {
 	background-color: #f6f6f6;
 	&__btnCmd {
 		@include btnExpCmd;
-		width: 53.6%;	
+		width: 186px;	
 		font-size: 18px;
 		font-weight: 300;		
 		&:hover::after {
@@ -800,7 +807,7 @@ footer {
 /*****************BOUTON + COCHE VERTE QUAND LE PLAT EST SELECTIONNE***********************/
 
 .btn-food {
-	width: 90%;
+	width: 95%;
 	height: 42px;
 	padding-left: 15px;
 	padding-top: 15px;
