@@ -81,6 +81,12 @@ a {
   opacity: 1;
 }
 
+@media (min-width: 768px) {
+  .loader {
+    height: 1512px;
+  }
+}
+
 .loader__bar {
   width: 90%;
   height: 15px;
@@ -413,6 +419,12 @@ main .btn-explore::after {
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .functioning__bloc {
+    flex-direction: row;
+  }
+}
+
 .btn {
   min-width: 300px;
   max-width: 100%;
@@ -516,18 +528,24 @@ main .btn-explore::after {
   margin-bottom: -20px;
 }
 
-.resto__cardGroup__Card {
+.cardGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 66px;
+}
+
+.cardGroup__Card {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
 
-.resto__cardGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  margin-bottom: 66px;
+@media (min-width: 768px) {
+  .cardGroup__Card {
+    flex-direction: row;
+  }
 }
 
 .card {
@@ -605,11 +623,10 @@ main .btn-explore::after {
 
 /**********************animation like accueil*********************************/
 .heart {
-  width: 90%;
   display: flex;
   justify-content: end;
   position: relative;
-  right: -10px;
+  right: 25px;
   background-color: white;
   cursor: pointer;
 }
@@ -638,15 +655,21 @@ main .btn-explore::after {
   height: 21px;
   font-size: 22px;
   position: absolute;
-  bottom: 45px;
+  bottom: 40px;
   right: 20px;
+}
+
+@media (min-width: 768px) {
+  .fa-heart {
+    bottom: 31px;
+  }
 }
 
 /**********************animation like page restaurant*********************************/
 .menu .fa-heart {
   position: absolute;
   top: -35px;
-  right: 7px;
+  /* right: 34px; */
 }
 
 /*********************************************************************************************************/
@@ -735,7 +758,7 @@ footer a {
 }
 
 .menu {
-  /* width: 95%; */
+  width: 95%;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   padding: 32px 13px 0 13px;
@@ -747,13 +770,11 @@ footer a {
 }
 
 .menu__titrePage {
-  width: 100%;
   padding-left: 4px;
   padding-right: 4px;
 }
 
 .menu__titrePage h2 {
-  width: 80%;
   height: 27px;
   color: #101010;
   font-size: 28px;
@@ -764,6 +785,7 @@ footer a {
 
 .titrePage__heartC {
   top: 15px;
+  right: 0;
 }
 
 .starter {
