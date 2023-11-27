@@ -46,7 +46,7 @@ main {
 		font-size: 18px;
 		font-weight: 300;
 		color: #353535;
-		text-align: center;
+		text-align: center;		
 	}
 }
 h1 {
@@ -80,7 +80,7 @@ a {
 }
 .header-index {
 	position: absolute;
-	top: 0;
+	top: 0;	
 }
 .main-index {
 	position: absolute;
@@ -98,7 +98,10 @@ a {
 	animation: load 4s both;
 	opacity: 1;
 	@media (min-width: 768px) {
-		height: 1512px;
+		height: 1500px;
+	}
+	@media (min-width: 1024px) {
+		height: 1355px;
 	}
 	&__bar {
 		width: 90%;
@@ -113,13 +116,16 @@ a {
 		padding-left: 50px;
 	}
 	img {
-		width: 30%;
+		width: 50%;
 		display: flex;
 		align-items: start;
 		justify-content: start;
 		position: absolute;
 		left: -35px;
 		animation: moveServer 4s linear both;
+		@media (min-width: 768px) {
+			width: 35%;
+		}
 	}
 	&__word {
 		width: 30%;
@@ -275,7 +281,7 @@ a {
 /***************************************************HEADER*************************************************************/
 
 header {
-	width: 99%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	h3 {
@@ -301,7 +307,7 @@ header {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			gap: 42px;
+			gap: 42px;			
 		}
 	}
 	.loc {
@@ -315,7 +321,7 @@ header {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			gap: 17px;
+			gap: 17px;			
 		}
 	}
 }
@@ -331,6 +337,9 @@ main .book {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	@media (min-width: 768px) {
+		padding-top: 30px;
+	}
 	h2 {
 		font-size: 24px;
 		font-weight: 700;
@@ -340,6 +349,22 @@ main .book {
 		height: 68px;
 		text-align: center;
 		margin: 0;
+		@media (min-width: 768px) {
+			font-size: 30px;
+			height: 47px;
+		}
+		@media (min-width: 1024px) {
+			height: 47px;
+			font-size: 40px;
+			margin-bottom: 18px;
+		}
+	}
+	h3 {
+		@media (min-width: 768px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 main .taste {
@@ -348,6 +373,10 @@ main .taste {
 	justify-content: center;
 	padding-top: 27px;
 	padding-bottom: 57px;
+	@media (min-width: 768px) {
+		padding-top: 18px;
+		padding-bottom: 30px;
+	}
 }
 main .btn-explore {
 	width: 218px;
@@ -401,10 +430,21 @@ main .btn-explore {
 	display: flex;
 	flex-direction: column;
 	padding-top: 48px;
-	padding-left: 20px;
+	padding-left: 20px; 
 	padding-right: 20px;
 	gap: 26px;
 	margin-bottom: 43.07px;
+	@media (min-width: 768px) {
+		gap: 25px;
+		margin-bottom: 25.07px;
+		padding-top: 50px;
+		padding-left: 67px;
+		padding-right: 68px;
+	}
+	@media (min-width: 1300px) {
+		padding-right: 170px;
+		padding-left: 100px;
+	}
 	h2 {
 		width: 100%;
 		height: 31px;
@@ -413,9 +453,10 @@ main .btn-explore {
 	&__bloc {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		@media (min-width: 768px) {			
-				flex-direction: row;			
+		justify-content: center;		
+		@media (min-width: 1024px) {			
+				flex-direction: row;
+				gap: 36.51px;							
 		}
 }
 }
@@ -437,10 +478,16 @@ main .btn-explore {
 	align-items: center;
 	margin-bottom: 24.93px;
 	margin-left: 10px;
+	@media (min-width: 768px) {
+		width: 957.6px;	
+	}
+	@media (min-width: 1024px) {
+		width: 322px;
+	}
 	&__content {
 		height: 19px;
 		display: flex;
-		margin-left: -90px;
+		margin-left: -90px;		
 		h3 {
 			height: 19px;
 			color: black;
@@ -458,6 +505,10 @@ main .btn-explore {
     padding-right: 27px;
     padding-left: 32px; 
     margin-top: -4px;
+	@media (min-width: 1024px) {
+		padding-right: 26.65px;
+		margin-left: 33.8px;
+	}
 }
 .fa-list-ul {
 	width: 16px;
@@ -467,6 +518,10 @@ main .btn-explore {
     padding-right: 28.55px;
     padding-left: 16px;
     margin-top: -4px;
+	@media (min-width: 1024px) {
+		padding-right: 22.14px;
+		margin-left: 35.32px;
+	}
 }
 .fa-store {
 	width: 18px;
@@ -476,6 +531,10 @@ main .btn-explore {
     padding-right: 25px; 
     padding-left: 25px; 
     margin-top: -2px;
+	@media (min-width: 1024px) {
+		padding-right: 17.64px;
+		margin-left: 37.82px;
+	}
 }
 .elipse {
 	width: 24px;
@@ -500,13 +559,15 @@ main .btn-explore {
 /*******************************************section restaurants***************************************************/
 
 .resto {
-	width: 95%;
+	width: 93.5%;
 	padding-left: 17px;
 	padding-right: 18px;
 	background-color: #f6f6f6;
 	display: flex;
 	flex-direction: column;
-	
+	@media (min-width: 768px) {
+		width: 97.5%;	
+	}	
 	a {
 		height: 251px;
 	}
@@ -515,6 +576,9 @@ main .btn-explore {
 		height: 68px;
 		margin-top: 54px;
 		margin-bottom: -20px;
+		@media (min-width: 768px) {
+			margin-top: 30px;
+		}
 	}
 	
 	}
@@ -523,7 +587,19 @@ main .btn-explore {
 	flex-direction: column;
 	gap: 9px;
 	margin-bottom: 66px;		
-	
+	@media (min-width: 768px) {
+		gap: 18px;
+		margin-bottom: 30px;
+	}
+	@media (min-width: 1024px) {
+		/* padding-right: 80px; */
+		padding-left: 50px;
+		gap: 50px;
+	}
+	@media (min-width: 1300px) {
+		padding-right: 140px;
+		padding-left: 163px;
+	}
 	&__Card {
 		width: 100%;
 		display: flex;
@@ -531,7 +607,10 @@ main .btn-explore {
 		gap: 9px;
 		@media (min-width: 768px) {			
 			flex-direction: row;			
-		}		
+		}	
+		@media (min-width: 1024px) {
+			gap: 50px;
+		}	
 	}	
 }
 
@@ -584,7 +663,7 @@ main .btn-explore {
 	justify-content: end;
 	position: relative;
 	top: -245px;
-	right: 2px;
+	right: -10px;
 	margin-top: -6px;
 	p {
 		width: 61.37px;
@@ -633,9 +712,12 @@ main .btn-explore {
 	font-size: 22px;
 	position: absolute;
 	bottom: 40px;
-	right: 20px;
+	right: 24px;
 	@media (min-width: 768px) {
 		bottom: 31px;
+	}
+	@media (min-width: 1024px) {
+		right: 64px;
 	}
 }
 
@@ -650,14 +732,23 @@ main .btn-explore {
 /*********************************************************************************************************/
 /******************************************FOOTER*****************************************************/
 
-footer {
-	width: 100%;
+footer {	
 	height: 142px;
 	padding: 22px 25px 22px 25px;
 	background-color: #353535;
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+	@media (min-width: 768px) {
+		padding: 30px 25px 30px 25px;
+		flex-direction: row-reverse;
+		height: 54px;
+		align-items: flex-end;
+		gap: 40px;
+	}
+	@media (min-width: 1024px) {		
+		gap: 16px;
+	}
 	h3 {
 		font-family: 'Shrikhand', sans-serif;
 		color: white;
@@ -665,12 +756,34 @@ footer {
 		font-size: 18px;
 		font-weight: 400;
 		text-align: start;
+		@media (min-width: 768px) {			
+			width: 137.58px;
+			height: 27px;
+		}
 	}
 	li {
 		color: white;
 		font-family: Roboto;
 		font-weight: 500;
 		word-wrap: break-word;
+		@media (min-width: 1024px) {
+			&:nth-child(1) {
+				width: 168px;
+				height: 19px;
+			}
+			&:nth-child(2) {
+				width: 168px;
+				height: 19px;
+			}
+			&:nth-child(3) {
+				width: 130px;
+				height: 20px;
+			}
+			&:nth-child(4) {
+				width: 130px;
+				height: 20px;
+			}
+		}
 	}
 	ul {
 		width: 100%;
@@ -681,19 +794,27 @@ footer {
 		display: flex;
 		flex-direction: column;
 		gap: 7px;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			height: 20px;
+			gap: 20px;
+		}
+		@media (min-width: 1024px) {			
+			gap: 7px;
+		}
 	}
 	a {
 		color: white;
 	}
 }
 .fa-utensils {
-	font-size: 13px;
+	font-size: 11px;
 	margin-right: 11px;
 }
 .fa-handshake-angle {
 	width: 11.92px;
 	height: 13px;
-	font-size: 13px;
+	font-size: 12px;
 	margin-right: 10.08px;
 }
 
