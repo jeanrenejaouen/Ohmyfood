@@ -1,0 +1,108 @@
+footer {
+  height: 142px;
+  padding: 22px 25px 22px 25px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 30px 25px 30px 25px;
+    flex-direction: row-reverse;
+    height: 54px;
+    align-items: flex-end;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    gap: 16px;
+  }
+}
+
+footer h3 {
+  font-family: 'Shrikhand', sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: start;
+}
+
+@media (min-width: 768px) {
+  footer h3 {
+    width: 137.58px;
+    height: 27px;
+  }
+}
+
+footer li {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+@media (min-width: 1024px) {
+  footer li:nth-child(1) {
+    width: 190px;
+    height: 19px;
+  }
+  footer li:nth-child(2) {
+    width: 168px;
+    height: 19px;
+  }
+  footer li:nth-child(3) {
+    width: 130px;
+    height: 20px;
+  }
+  footer li:nth-child(4) {
+    width: 130px;
+    height: 20px;
+  }
+}
+
+footer ul {
+  width: 100%;
+  height: 99px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+@media (min-width: 768px) {
+  footer ul {
+    flex-direction: row;
+    height: 20px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer ul {
+    gap: 7px;
+  }
+}
+
+footer a {
+  color: white;
+}
+
+.fa-utensils {
+  font-size: 11px;
+  margin-right: 11px;
+}
+
+.fa-handshake-angle {
+  width: 11.92px;
+  height: 13px;
+  font-size: 12px;
+  margin-right: 10.08px;
+}
