@@ -799,6 +799,12 @@ main .btn-explore::after {
   top: -35px;
 }
 
+@media (max-width: 355px) {
+  .menu .fa-heart {
+    right: 5px;
+  }
+}
+
 @media (min-width: 800px) {
   .menu .fa-heart {
     right: -49px;
