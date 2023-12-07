@@ -71,7 +71,8 @@ main .btn-explore {
 		font-weight: 500;
 	}
 	&:hover::after {
-		opacity: 1;				
+		opacity: 1;
+		transform: box-shadow;				
 	}
 	&::after {
 		content: "";
