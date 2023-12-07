@@ -793,13 +793,13 @@ main .btn-explore::after {
   }
 }
 
-/**********************animation like page restaurant*********************************/
+/**********************position like page restaurant*********************************/
 .menu .fa-heart {
   position: absolute;
   top: -35px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .menu .fa-heart {
     right: -49px;
   }

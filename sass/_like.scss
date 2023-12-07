@@ -38,11 +38,11 @@
 	}
 }
 
-/**********************animation like page restaurant*********************************/
+/**********************position like page restaurant*********************************/
 .menu .fa-heart {
 	position: absolute;
 	top: -35px;
-	@media (min-width: 768px) {
+	@media (min-width: 800px) {
 		right: -49px;
 	}	
 }
