@@ -1,0 +1,51 @@
+.heart {	
+	display: flex;
+	justify-content: end;
+	position: relative;
+	right: 25px;	
+	background-color: white;
+	cursor: pointer;
+	&__bg {
+		color: transparent;
+		background: linear-gradient(194deg, $primary-color 0%, $secondary-color 100%);
+		-webkit-background-clip: text;
+		opacity: 0;
+		transform: scaleX(0);
+		transition: opacity 250ms;
+		transition: transform 700ms ease-in-out;
+	}
+	&__noBg {
+		color: #101010;
+	}
+	&:active .heart__bg {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+.fa-heart {
+	width: 22px;
+	height: 21px;
+	font-size: 22px;
+	position: absolute;
+	bottom: 40px;
+	right: 24px;
+	@media (min-width: 768px) {
+		bottom: 31px;
+	}
+	@media (min-width: 1024px) {
+		right: 64px;
+	}
+}
+
+/**********************position like page restaurant*********************************/
+.menu .fa-heart {
+	position: absolute;
+	top: -35px;
+	@media (max-width: 355px) {
+		right: 5px;
+	}	
+	@media (min-width: 800px) {
+		right: -49px;
+	}
+}
