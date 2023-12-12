@@ -58,6 +58,9 @@
 	@media (min-width: 1024px) {
 		min-width: 180px;
 	}
+	&:hover .fa-solid {
+		color: #9356DC;
+	}
 	&__content {
 		height: 19px;
 		display: flex;
@@ -68,6 +71,7 @@
 			font-size: 16px;
 			font-weight: 500;
 		}
+	
 	}
 }
 
@@ -101,7 +105,7 @@
 	width: 18px;
     height: 17.91px;   
     font-size: 18px;    
-    color: #9356DC; 
+    color: #7e7e7e; 
     padding-right: 25px; 
     padding-left: 25px; 
     margin-top: -2px;
