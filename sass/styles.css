@@ -183,7 +183,6 @@
   0% {
     opacity: 1;
   }
-  
   100% {
     opacity: 0;
   }
@@ -193,7 +192,6 @@
   0% {
     opacity: 0;
   }
-  
   100% {
     opacity: 1;
   }
@@ -387,7 +385,8 @@ main .btn-explore h3 {
 }
 
 main .btn-explore:hover::after {
-  opacity: 1;    
+  opacity: 1;
+  transform: box-shadow;
 }
 
 main .btn-explore::after {
@@ -399,11 +398,11 @@ main .btn-explore::after {
   left: 0;
   border-color: transparent;
   background: linear-gradient(231deg, #9356DC 0%, #FF79DA 100%);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35); 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   transition: opacity 250ms, box-shadow 400ms ease-in-out;
   border-radius: 25px;
   opacity: 0;
-  z-index: -1;  
+  z-index: -1;
 }
 
 .functioning {
@@ -422,7 +421,7 @@ main .btn-explore::after {
     width: 92%;
     gap: 25px;
     margin-bottom: 25.07px;
-    padding-top: 50px;    
+    padding-top: 50px;
     padding-right: 68px;
   }
 }
@@ -597,7 +596,7 @@ main .btn-explore::after {
 }
 
 @media (min-width: 1300px) {
-  .resto h2 {    
+  .resto h2 {
     padding-left: 163px;
   }
 }
@@ -736,18 +735,18 @@ main .btn-explore::after {
   background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   opacity: 0;
-  transform: scaleX(0);
+  /* transform: scaleX(0); */
   /* transition: opacity 250ms; */
-  transition: opacity 250ms, transform 700ms ease-in-out;
+  transition: opacity 250ms;
 }
 
 .heart__noBg {
   color: #101010;
 }
 
-.heart:active .heart__bg {
+.heart:hover .heart__bg {
   opacity: 1;
-  transform: scaleX(1);
+  /* transform: scaleX(1); */
 }
 
 .fa-heart {
@@ -1030,8 +1029,8 @@ footer a {
   background-color: #f6f6f6;
 }
 
-.cmd__btnCmd {  
-	font-family: Roboto, sans-serif;	
+.cmd__btnCmd {
+  font-family: Roboto, sans-serif;
   height: 50px;
   border-radius: 25px;
   color: white;

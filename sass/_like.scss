@@ -10,16 +10,16 @@
 		background: linear-gradient(194deg, $primary-color 0%, $secondary-color 100%);
 		-webkit-background-clip: text;
 		opacity: 0;
-		transform: scaleX(0);
+		/* transform: scaleX(0); */
 		/* transition: opacity 250ms; */
-		transition: opacity 250ms, transform 700ms ease-in-out;
+		transition: opacity 250ms/* , transform 700ms ease-in-out */;
 	}
 	&__noBg {
 		color: #101010;
 	}
-	&:active .heart__bg {
+	&:hover .heart__bg {
 		opacity: 1;
-		transform: scaleX(1);
+		/* transform: scaleX(1); */
 	}
 }
 
