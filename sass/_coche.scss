@@ -27,13 +27,13 @@
 		opacity: 0;
 		transition: 1s;		
 	}
-	&:active .flat {
+	&:hover .flat {
 		width: calc(100% - 59px - 40px);
 	}
-	&:active .price {
+	&:hover .price {
 		width: 94px;
 	}
-	&:active .check {
+	&:hover .check {
 		width: 59px;
 		.fa-circle-check {
 			opacity: 1;			

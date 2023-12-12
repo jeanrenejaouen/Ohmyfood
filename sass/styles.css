@@ -1192,19 +1192,19 @@ footer a {
   transition: 1s;
 }
 
-.btn-food:active .flat {
+.btn-food:hover .flat {
   width: calc(100% - 59px - 40px);
 }
 
-.btn-food:active .price {
+.btn-food:hover .price {
   width: 94px;
 }
 
-.btn-food:active .check {
+.btn-food:hover .check {
   width: 59px;
 }
 
-.btn-food:active .check .fa-circle-check {
+.btn-food:hover .check .fa-circle-check {
   opacity: 1;
 }
 
