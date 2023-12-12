@@ -1190,7 +1190,6 @@ footer a {
   border-radius: 20px;
   opacity: 0;
   transition: 1s;
-  transform: rotate(90deg);
 }
 
 .btn-food:active .flat {
@@ -1207,7 +1206,6 @@ footer a {
 
 .btn-food:active .check .fa-circle-check {
   opacity: 1;
-  transform: rotate(360deg);
 }
 
 .flat {
@@ -1295,5 +1293,4 @@ footer a {
   border-radius: 20px;
   opacity: 0;
   transition: 1s;
-  transform: rotate(90deg);
 }
