@@ -739,18 +739,13 @@ main .btn-explore::after {
   background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   opacity: 0;
-  /* transform: scaleX(0); */
-  /* transition: opacity 250ms; */
-  transition: opacity 250ms;
-}
-
-.heart__noBg {
-  color: #101010;
+  transform: scaleX(0);
+  transition: all 700ms;
 }
 
 .heart:hover .heart__bg {
   opacity: 1;
-  /* transform: scaleX(1); */
+  transform: scaleX(1);
 }
 
 .fa-heart {
