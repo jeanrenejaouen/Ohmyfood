@@ -12,7 +12,7 @@
 }
 
 .loader {
-	width: 100%;
+	width: 99%;
 	height: 2262px;	
 	background-color: black;
 	position: relative;
@@ -27,8 +27,7 @@
 	@media (min-width: 1024px) {
 		height: 1355px;
 	}
-	&__bar {
-		width: 90%;
+	&__bar {		
 		height: 15px;
 		background-color: $tertiary-color;
 		display: flex;
