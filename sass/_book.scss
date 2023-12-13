@@ -47,21 +47,10 @@ main .taste {
 	}
 }
 main .btn-explore {
-	width: 218px;
-	height: 50px;
-	border-radius: 25px;
-	color: white;
+	width: 218px;	
 	font-size: 16px;
 	font-weight: 500;
-	border-color: transparent;
-	cursor: pointer;
-	background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%);
-	box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	z-index: 1;
+	@include btnExpCmd;	
 	h3 {
 		color: white;
 		font-size: 16px;
@@ -82,11 +71,11 @@ main .btn-explore {
 		bottom: 0;
 		left: 0;
 		border-color: transparent;
-		background: linear-gradient(231deg, #9356DC 0%, #FF79DA 100%);
+		background: linear-gradient(lighten($secondary-color, 5), lighten($primary-color, 5));
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 		transition: opacity 250ms, box-shadow 400ms ease-in-out;
 		border-radius: 25px;
 		opacity: 0;
 		z-index: -1;		
-	}
+	}	
 }
