@@ -1,3 +1,82 @@
+@keyframes flash {
+    0% {
+        color: white;
+        text-shadow: 0 0 7px white;        
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: white;
+        text-shadow: 0 0 7px white;        
+    }
+}
+
+@keyframes moveServer {
+    0% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(.59,.44,.6,.43);        
+    }
+    
+    24% {
+        transform: translateX(30%);
+        animation-timing-function: cubic-bezier(.59,.44,.6,.43);
+    }
+    46% {
+        transform: translateX(60%);
+        animation-timing-function: cubic-bezier(.59,.44,.6,.43);
+    }
+    85%, 100% {
+        opacity: 1;
+    }
+        
+   100% {
+        transform: translateX(100%);           
+   }
+   }
+
+@keyframes load {
+    0% {
+        opacity: 1;        
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;        
+    }    
+}
+
+@keyframes homepage {
+    0% {
+        opacity: 0;       
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;                 
+    }    
+}
 .header-index, .main-index, .footer-index {
 	opacity: 0;
 	animation: homepage 4s both;
@@ -27,7 +106,8 @@
 	@media (min-width: 1024px) {
 		height: 1355px;
 	}
-	&__bar {		
+	&__bar {
+        width: 80%;		
 		height: 15px;
 		background-color: $tertiary-color;
 		display: flex;
@@ -113,63 +193,4 @@
             opacity: 1;
         }		
 	}
-}
-
-@keyframes flash {
-    0% {
-        color: white;
-        text-shadow: 0 0 7px white;        
-    }
-    90% {
-        color: #484848;
-        text-shadow: none;
-    }
-    100% {
-        color: white;
-        text-shadow: 0 0 7px white;        
-    }
-}
-
-@keyframes moveServer {
-    0% {
-        transform: translateX(0);
-        animation-timing-function: cubic-bezier(.59,.44,.6,.43);        
-    }
-    
-    24% {
-        transform: translateX(30%);
-        animation-timing-function: cubic-bezier(.59,.44,.6,.43);
-    }
-    46% {
-        transform: translateX(60%);
-        animation-timing-function: cubic-bezier(.59,.44,.6,.43);
-    }
-    85%, 100% {
-        opacity: 1;
-    }
-        
-   100% {
-        transform: translateX(100%);           
-   }
-   }
-
-@keyframes load {
-    0% {
-        opacity: 1;
-        
-    }
-    
-    100% {
-        opacity: 0;        
-    }    
-}
-
-@keyframes homepage {
-    0% {
-        opacity: 0;       
-    }
-   
-    100% {
-        opacity: 1;                 
-    }    
 }
