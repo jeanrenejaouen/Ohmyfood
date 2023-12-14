@@ -413,15 +413,6 @@ main .btn-explore {
   z-index: 1;
 }
 
-main .btn-explore h3 {
-  color: white;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-}
-
 main .btn-explore:hover::after {
   opacity: 1;
   transform: box-shadow;
