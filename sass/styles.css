@@ -371,8 +371,19 @@ main .book h2 {
   }
 }
 
+main .book p {
+  width: 100%;
+  height: 46px;
+  margin: 0;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
-  main .book h3 {
+  main .book p {
     display: flex;
     align-items: center;
     justify-content: center;

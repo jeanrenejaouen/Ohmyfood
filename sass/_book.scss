@@ -27,7 +27,15 @@ main .book {
 			margin-bottom: 18px;
 		}
 	}
-	h3 {
+	p {
+		width: 100%;
+		height: 46px;
+		margin: 0;
+		font-family: roboto, sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		color: #353535;
+		text-align: center;		
 		@media (min-width: 768px) {
 			display: flex;
 			align-items: center;
