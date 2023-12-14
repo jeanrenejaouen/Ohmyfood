@@ -60,15 +60,11 @@
 	}
 	&__content {
 		height: 19px;
-		display: flex;
-		margin-left: -20px;		
-		span {			
-			color: black;
-			font-size: 16px;
-			font-family: Roboto, sans-serif;
-			font-weight: 500;
-			word-wrap: break-word
-		}	
+		display: flex;					
+		color: black;
+		font-size: 16px;
+		font-family: Roboto, sans-serif;
+		font-weight: 500;		
 	}
 }
 
@@ -78,7 +74,7 @@
     font-size: 19.9px;    
     color: #7e7e7e;  
     padding-right: 27px;
-    padding-left: 32px; 
+    padding-left: 12px; 
     margin-top: -4px;
 	@media (min-width: 1024px) {
 		padding-right: 26.65px;
@@ -91,7 +87,7 @@
     font-size: 19.9px;    
     color: #7e7e7e;
     padding-right: 28.55px;
-    padding-left: 16px;
+    padding-left: 12px;
     margin-top: -4px;
 	@media (min-width: 1024px) {
 		padding-right: 22.14px;
@@ -104,7 +100,7 @@
     font-size: 18px;    
     color: #7e7e7e; 
     padding-right: 25px; 
-    padding-left: 25px; 
+    padding-left: 12px; 
     margin-top: -2px;
 	@media (min-width: 1024px) {
 		padding-right: 17.64px;
