@@ -1218,7 +1218,7 @@ footer a {
 }
 
 .btn-food:hover .flat {
-  width: calc(100% - 59px - 40px);
+  width: calc(100% - 99px);
 }
 
 .btn-food:hover .price {
