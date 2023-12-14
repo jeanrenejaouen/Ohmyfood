@@ -319,6 +319,17 @@ header .loc__location {
   gap: 17px;
 }
 
+header .loc__location .city {
+  width: 109px;
+  height: 19px;
+  color: #353535;
+  font-size: 16px;
+  font-family: roboto sans-serif;
+  font-weight: 500;
+  background-color: #EAEAEA;
+  border: transparent;
+}
+
 main .book {
   width: 100%;
   background-color: #f6f6f6;
