@@ -479,6 +479,7 @@ main .btn-explore::after {
 }
 
 .functioning__bloc {
+  padding-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
