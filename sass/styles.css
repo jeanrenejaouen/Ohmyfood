@@ -886,6 +886,7 @@ footer ul {
 
 @media (min-width: 768px) {
   footer ul {
+    justify-content: end;
     flex-direction: row;
     height: 20px;
     gap: 10px;

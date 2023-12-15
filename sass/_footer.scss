@@ -62,6 +62,7 @@ footer {
 		flex-direction: column;
 		gap: 7px;
 		@media (min-width: 768px) {
+			justify-content: end;
 			flex-direction: row;
 			height: 20px;
 			gap: 10px;
