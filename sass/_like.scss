@@ -40,8 +40,9 @@
 .menu .fa-heart {
 	position: absolute;
 	top: -45px;
-	@media (max-width: 355px) {
-		right: 5px;
+	
+	@media (max-width: 380px) {
+		right: -25px;
 	}	
 	@media (min-width: 800px) {
 		right: -75px;
