@@ -790,7 +790,7 @@ main .btn-explore::after {
 /**********************position like page restaurant*********************************/
 .menu .fa-heart {
   position: absolute;
-  top: -35px;
+  top: -42px;
 }
 
 @media (max-width: 355px) {
@@ -801,7 +801,7 @@ main .btn-explore::after {
 
 @media (min-width: 800px) {
   .menu .fa-heart {
-    right: -49px;
+    right: -120px;
   }
 }
 
@@ -931,7 +931,7 @@ footer a {
 
 .banner {
   width: 100%;
-  margin-top: -3px;
+  margin: 0;
 }
 
 .banner img {
@@ -965,6 +965,8 @@ footer a {
 .menu__titrePage {
   padding-left: 4px;
   padding-right: 4px;
+  margin: 0;
+  margin-bottom: -40px;
 }
 
 .menu__titrePage h2 {
@@ -973,7 +975,6 @@ footer a {
   font-size: 28px;
   font-family: Shrikhand;
   font-weight: 400;
-  margin: 0;
 }
 
 .titrePage__heartC {
@@ -1002,7 +1003,7 @@ footer a {
 
 @media (min-width: 768px) {
   .starter__titreStarter {
-    margin-left: -385px;
+    width: 660px;
   }
 }
 
@@ -1182,6 +1183,8 @@ footer a {
   background-color: white;
   border-radius: 15px;
   border: 0;
+  list-style-type: none;
+  margin: 0;
   cursor: pointer;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   position: relative;
