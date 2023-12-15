@@ -40,20 +40,21 @@
 	&__titrePage {		
 		padding-left: 4px;
 		padding-right: 4px;
-		margin: 0;
-		margin-bottom: -40px;					
+		margin: 0;							
 		height: 27px;
+		h2 {
 		color: #101010;
 		font-size: 28px;
 		font-family: Shrikhand;
-		font-weight: 400;		
+		font-weight: 400;
+		margin: 0;		
 	}
+}
 }
 
 
 .titrePage__heartC {
-	top: 15px;
-	right: 0;	
+	top: 15px;		
 }
 
 .starter {

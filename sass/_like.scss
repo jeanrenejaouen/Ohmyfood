@@ -39,11 +39,11 @@
 /**********************position like page restaurant*********************************/
 .menu .fa-heart {
 	position: absolute;
-	top: -42px;
+	top: -45px;
 	@media (max-width: 355px) {
 		right: 5px;
 	}	
 	@media (min-width: 800px) {
-		right: -120px;
+		right: -75px;
 	}
 }
