@@ -60,8 +60,7 @@ main .btn-explore {
 	font-weight: 500;
 	@include btnExpCmd;		
 	&:hover::after {
-		opacity: 1;
-		transform: box-shadow;				
+		opacity: 1;						
 	}
 	&::after {
 		content: "";

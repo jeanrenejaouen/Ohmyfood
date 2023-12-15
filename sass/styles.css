@@ -424,7 +424,6 @@ main .btn-explore {
 
 main .btn-explore:hover::after {
   opacity: 1;
-  transform: box-shadow;
 }
 
 main .btn-explore::after {
@@ -690,6 +689,7 @@ main .btn-explore::after {
 
 .card__divImg {
   width: 100%;
+  margin: 0;
   height: 231px;
   position: relative;
 }
@@ -726,17 +726,10 @@ main .btn-explore::after {
 }
 
 .newGreen {
-  width: 93%;
-  height: 29px;
-  display: flex;
-  justify-content: end;
-  position: relative;
-  top: -245px;
-  right: -10px;
+  position: absolute;
+  top: 18px;
+  right: 15px;
   margin-top: -6px;
-}
-
-.newGreen p {
   width: 61.37px;
   height: 13px;
   font-size: 14px;
@@ -1074,7 +1067,6 @@ footer a {
 
 .cmd__btnCmd:hover::after {
   opacity: 1;
-  transform: box-shadow;
 }
 
 .cmd__btnCmd::after {

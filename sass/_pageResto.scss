@@ -112,8 +112,7 @@
 		font-size: 18px;
 		font-weight: 300;		
 		&:hover::after {
-			opacity: 1;
-			transform: box-shadow;
+			opacity: 1;			
 		}
 		&::after {
 			content: "";
