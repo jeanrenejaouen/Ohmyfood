@@ -89,7 +89,7 @@
 
 .main-index {
   position: absolute;
-  top: 115px;
+  top: 125px;
 }
 
 .loader {
@@ -245,7 +245,6 @@ main h3 {
 
 h1 {
   font-family: 'Shrikhand', sans-serif;
-  width: 100%;
   height: 36px;
   margin: 0;
   color: #101010;
@@ -284,7 +283,6 @@ header h3 {
 }
 
 header .log {
-  width: 100%;
   height: 63px;
   margin-bottom: 3px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
