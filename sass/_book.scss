@@ -54,10 +54,7 @@ main .taste {
 		padding-bottom: 30px;
 	}
 }
-main .btn-explore {
-	width: 218px;	
-	font-size: 16px;
-	font-weight: 500;
+main .btn-explore {	
 	@include btnExpCmd;		
 	&:hover::after {
 		opacity: 1;
@@ -78,4 +75,7 @@ main .btn-explore {
 		opacity: 0;
 		z-index: -1;		
 	}	
+}
+.w-btnExp {
+	width: 218px;
 }
