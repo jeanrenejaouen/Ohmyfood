@@ -77,17 +77,17 @@
   }
 }
 
-.header-index, .main-index, .footer-index {
+header, main, footer {
   opacity: 0;
   animation: homepage 4s both;
 }
 
-.header-index {
+header {
   position: absolute;
   top: 0;
 }
 
-.main-index {
+main {
   position: absolute;
   top: 125px;
 }
