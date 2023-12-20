@@ -543,12 +543,14 @@ main .btn-explore::after {
   padding-right: 27px;
   padding-left: 25px;
   margin-top: -4px;
+  margin-left: -20px;
 }
 
 @media (min-width: 1024px) {
   .fa-mobile-screen-button {
     padding-right: 26.65px;
     padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -560,12 +562,14 @@ main .btn-explore::after {
   padding-right: 28.55px;
   padding-left: 5px;
   margin-top: -4px;
+  margin-left: -20px;
 }
 
 @media (min-width: 1024px) {
   .fa-list-ul {
     padding-right: 22.14px;
     padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -577,12 +581,14 @@ main .btn-explore::after {
   padding-right: 25px;
   padding-left: 12px;
   margin-top: -2px;
+  margin-left: -20px;
 }
 
 @media (min-width: 1024px) {
   .fa-store {
     padding-right: 17.64px;
     padding-left: 0;
+    margin-left: 0;
   }
 }
 
